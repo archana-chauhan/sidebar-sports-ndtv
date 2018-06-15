@@ -1,0 +1,3178 @@
+.swiper-container {
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	z-index: 1
+}
+.swiper-container-no-flexbox .swiper-slide {
+	float: left
+}
+.swiper-container-vertical>.swiper-wrapper {
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column
+}
+.swiper-wrapper {
+	position: relative;
+	z-index: 1;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box
+}
+.swiper-container-android .swiper-slide, .swiper-wrapper {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate(0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0)
+}
+.swiper-container-multirow>.swiper-wrapper {
+	-webkit-box-lines: multiple;
+	-moz-box-lines: multiple;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+.swiper-container-free-mode>.swiper-wrapper {
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	margin: 0 auto
+}
+.swiper-slide {
+	-webkit-flex-shrink: 0;
+	-ms-flex: 0 0 auto;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative
+}
+.swiper-button-disabled {
+	cursor: default!important;
+	opacity: .4
+}
+.swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
+	height: auto
+}
+.swiper-container-autoheight .swiper-wrapper {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	-webkit-transition-property: -webkit-transform, height;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform, height
+}
+.swiper-container .swiper-notification {
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	opacity: 0;
+	z-index: -1000
+}
+.swiper-wp8-horizontal {
+	-ms-touch-action: pan-y;
+	touch-action: pan-y
+}
+.swiper-wp8-vertical {
+	-ms-touch-action: pan-x;
+	touch-action: pan-x
+}
+.swiper-lazy-preloader {
+	width: 42px;
+	height: 42px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -21px;
+	margin-top: -21px;
+	z-index: 10;
+	-webkit-transform-origin: 50%;
+	-moz-transform-origin: 50%;
+	transform-origin: 50%;
+	-webkit-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+	-moz-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+	animation: swiper-preloader-spin 1s steps(12, end) infinite
+}
+.swiper-lazy-preloader:after {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+	background-position: 50%;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat
+}
+.swiper-lazy-preloader-white:after {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%23fff'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")
+}
+@-webkit-keyframes swiper-preloader-spin {
+100% {
+-webkit-transform:rotate(360deg)
+}
+}
+@keyframes swiper-preloader-spin {
+100% {
+transform:rotate(360deg)
+}
+}
+.si-footballStats .si-tab {
+	clear: both
+}
+.si-football .ui-datepicker-calendar td a {
+	color: #134e8d
+}
+.si-football .nd-row1 .nd-box1 .nd-box-bg {
+	background-image: url(../../../../static.sports.ndtv.com/web/images/stats-goals.png)
+}
+.si-football .nd-row1 .nd-box2 .nd-box-bg {
+	background-image: url(../../../../static.sports.ndtv.com/web/images/stats-crosses.png)
+}
+.si-football .nd-row2 .nd-box1 .nd-box-bg {
+	background-image: url(../../../../static.sports.ndtv.com/web/images/stats-target.png)
+}
+.si-football .nd-row2 .nd-box2 .nd-box-bg {
+	background-image: url(../../../../static.sports.ndtv.com/web/images/offside.png)
+}
+.si-football .nd-row3 .nd-box1 .nd-box-bg {
+	background-image: url(../../../../static.sports.ndtv.com/web/images/stats-interception.png)
+}
+.si-football .nd-row3 .nd-box2 .nd-box-bg {
+	background-image: url(../../../../static.sports.ndtv.com/web/images/stats-block.png)
+}
+.si-football .nd-row3 .nd-box3 .nd-box-bg {
+	background-image: url(../../../../static.sports.ndtv.com/web/images/corner-offside.png)
+}
+.si-football .nd-row4 .nd-box1 .nd-box-bg {
+	background-image: url(../../../../static.sports.ndtv.com/web/images/stats-yellowcards.png)
+}
+.si-football .nd-row4 .nd-box2 .nd-box-bg {
+	background-image: url(../../../../static.sports.ndtv.com/web/images/stats-redcard.png)
+}
+.si-subtab-wrap .active {
+	background-color: #1286c6!important
+}
+.match-fixture a {
+	color: #fff
+}
+.nd-load-more span img {
+	padding: 0 22px
+}
+.si-footballStats .nd-mod-header {
+	padding: 20px 0
+}
+.cnwidget.cnvw a:hover, .si-football .mod-news-listing .list-type-1 .post-tag a {
+	color: #134e8d
+}
+.cnwidget.cnvw .cnwidget-footer a, .cnwidget.cnvw [class*=" icon-"]::before, .cnwidget.cnvw [class^=icon-]::before, .vertical-a .syndicatedItem .video-title, .vertical-a .video-title {
+	color: #134e8d!important
+}
+.widget-team-squad .player-name {
+	font-size: 12px
+}
+.mod.mod-team-listing.nd-football-listing {
+	padding: 15px
+}
+.cnwidget.cnvw .cnitem-footer {
+	border-bottom: 4px solid #134e8d!important
+}
+.organic-thumbnails-a .video-title, .organic-thumbnails-b .video-title, .thumbnails-b .syndicatedItem .video-title {
+	color: #1286c6!important
+}
+.social-share li {
+	opacity: .8
+}
+.social-share li:hover {
+	opacity: 1
+}
+.si-football .sticky-nav.active .nd-secondary-nav .nav-more-menu li {
+	color: #333
+}
+.nd-social-counts .social-share li.counts-mailto {
+	background-color: gray
+}
+.nd-social-counts .social-share li.counts-mailto span::before {
+	background-image: url(../images/social-mailto.html);
+	background-position: center center;
+	height: 15px;
+	padding-left: 15px;
+	width: 10px
+}
+.si-football .mod-postlisting .list-type-7 .post-type-article .post-meta {
+	margin-top: 5px
+}
+.si-football .sticky-nav.active .menu-section.subMenuNewsData {
+	left: -250px!important
+}
+.si-football .nd-primary-nav.nd-nav .active-page {
+	border-bottom: 4px solid #1286C6!important;
+	opacity: 1!important
+}
+.si-football .nd-secondary-nav.nd-nav .active-page::before {
+	opacity: 1!important
+}
+
+.si-microsite #side-nav ul li.nav-105056 a:hover:before, .si-microsite #side-nav ul li.nav-105056.active a::before {
+	background-position: -193px -1003px
+}
+#side-nav ul li.nav-105056 a:hover {
+	color: red
+}
+.si-microsite #side-nav ul li.nav-105056 a::before {
+	background-position: -124px -1003px
+}
+#side-nav ul li.nav-106436 a:hover:before, #side-nav ul li.nav-106436.active a::before {
+	background-position: -340px -471px!important
+}
+#side-nav ul li.nav-106436 a:hover {
+	color: #e757fd
+}
+.si-microsite #side-nav ul li.nav-106436 a::before {
+	background-position: -270px -471px
+}
+.si-football .mod-news-listing .list-type-1 .post-type-news-list .post-meta-news .post-time {
+	font-size: 10px
+}
+.wgt.scr-wgt.nd-ad {
+	text-align: center
+}
+body>img {
+	display: none
+}
+.photo-detail-description p {
+	font-size: 15px;
+	padding: 0 10px
+}
+.si-football .mod-article .article-content .author-description p {
+	padding: 0;
+	margin-top: 5px
+}
+.mod-postlisting .list-type-7 .post-thumbnail img {
+	height: 60px
+}
+.mod.mod-history-listing {
+	margin-top: 20px
+}
+.si-colorthree a, .si-football .si-colorthree {
+	color: #134e8d!important
+}
+.si-football .si-line0 {
+	background-color: #134e8d!important
+}
+.si-football .list-type-13 .post-thumbnail {
+	background-color: #1286c6
+}
+.mod-team-profile.mod-profile .nd-profile {
+	padding: 0
+}
+.mod-article-caraousel .post-item.swiper-slide {
+	height: 57px
+}
+.mod-standing-football .nd-accord-head {
+	cursor: auto
+}
+.si-football .nd-secondary-nav .nav-more-menu {
+	background-color: #fff!important;
+	box-shadow: 0 0 3px -1px gray
+}
+.si-football .nd-secondary-nav .nav-more-menu li {
+	color: #333
+}
+.si-football .mod-article-caraousel .post-title h1, .si-football .mod-article-caraousel .post-title h2, .si-football .mod-article-caraousel .post-title h3 {
+	font-size: 12px
+}
+.author-body {
+	overflow: hidden;
+	margin-top: 10px
+}
+.author-section {
+	margin-top: 16px
+}
+.author-description h3 {
+	font-size: 14px;
+	color: #333
+}
+.author-description p {
+	margin-top: 5px
+}
+.author-image {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute
+}
+.author-description {
+	padding-left: 60px
+}
+.author-heading {
+	font-size: 14px;
+	color: #717170;
+	text-transform: uppercase
+}
+.match-fixture h1, .match-fixture h2 {
+	font-size: 15px
+}
+.widget-winner-history .filter {
+	position: absolute;
+	right: 0;
+	top: 0
+}
+.si-football .nav-container.active .fixture-detail {
+	display: none!important
+}
+.nd-secondary-nav .nav-wrap ul li .nav-more-menu ul li:first-child, .sticky-nav.active .nd-secondary-nav .nav-wrap ul li:first-child {
+	display: table
+}
+.menu-section.subMenuPhotoData, .menu-section.subMenuVideoData {
+	left: -305px!important
+}
+.si-football .sticky-nav.active .menu-section.subMenuPhotoData, .si-football .sticky-nav.active .menu-section.subMenuVideoData {
+	left: -416px!important
+}
+.si-football .mainbody .row .col-8 {
+	width: 66.6667%
+}
+.si-football .si-siWrp .si-main-nav li a:hover, .si-football .si-siWrp .si-main-nav li.si-active a {
+	background-color: #134e8d!important;
+	border: 2px solid #134e8d!important
+}
+.si-football .si-colorgreen, .si-football .si-colorred {
+	background: 0 0!important
+}
+.si-football .si-sch-matchCbut.si-fright {
+	background-color: #134e8d
+}
+.si-football .si-colorft {
+	color: #134e8d
+}
+.si-football .si-numberG, .si-football .si-tabHead, .si-football .si-tabHead1, .si-football .si-tabHeadNew {
+	border-color: #134e8d!important
+}
+.si-football .si-gridbg1, .si-siWrp .si-main-nav li a:hover, .si-siWrp .si-main-nav li.si-active a {
+	background: #134e8d!important
+}
+.si-mainBodyBg {
+	padding-bottom: 15px
+}
+.cust-policy li a {
+	color: #868585;
+	text-transform: uppercase;
+	font-size: 12px
+}
+.cust-policy li {
+	float: left;
+	margin-right: 15px
+}
+.cust-aboutus {
+	background-color: #121111
+}
+.cust-policy {
+	position: relative;
+	top: 5px
+}
+.si-football .nd-footer .links .title {
+	position: absolute;
+	top: 50%;
+	transform: translatey(-50%);
+	-moz-transform: translatey(-50%);
+	-webkit-transform: translatey(-50%);
+	-o-transform: translatey(-50%);
+	margin-top: 0
+}
+.si-football .mod-postlisting .list-type-1 .post-type-article.post-item-featured .post-title {
+	margin-top: 0
+}
+.si-football .list-type-13 .post-thumbnail {
+	border: none
+}
+.si-football .bottom-ndtv-ad-microsite {
+	margin-bottom: 15px
+}
+.si-football .trc_related_container {
+	background-color: #fff;
+	clear: both;
+	padding: 10px 15px!important
+}
+.swiper-slide.active .loading-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 4px;
+	background-color: #1286c6;
+	z-index: 99
+}
+.social-share li.comment-new a {
+	background-image: url(../images/comments.html)
+}
+.si-football .nd-gallary-wrapper .gallery-data p {
+	margin-bottom: 10px
+}
+.si-football .mod-listing.mod-photo-listing, .si-football .mod-listing.mod-video-listing {
+	margin-bottom: 0;
+	padding: 10px
+}
+.si-football .post-meta span a {
+	border-right: 1px solid #9c9c9c;
+	color: #1286C6;
+	padding-right: 4px
+}
+.mod-feature-listing .post-type-feature .post-thumbnail img {
+	width: 80%
+}
+.nd-widget-fixtures .mtch_center {
+	margin: 0 -10px
+}
+.article-related .mod-head h2 {
+	font-size: 11.4px
+}
+.si-football .nd-football-module .match-venue {
+	position: relative
+}
+.si-football .nd-football-module .match-venue::before {
+	position: absolute;
+	height: 1px;
+	background-color: rgba(255,255,255,.1);
+	left: 0;
+	width: 100%;
+	content: "";
+	bottom: -8px
+}
+.nd-football-module .match-venue {
+	position: relative
+}
+.si-football .nav-container {
+	margin-top: 0;
+	position: relative
+}
+.si-football .photo-crtsy {
+	padding-bottom: 8px
+}
+.social-share li a {
+	border: 1px solid gray;
+	border-radius: 50%
+}
+.mod-article-caraousel .post-item.active .post-title h1 a, .mod-article-caraousel .post-item.active .post-title h2 a, .mod-article-caraousel .post-item.active .post-title h3 a {
+	color: #161616!important
+}
+.si-football .mod-gallery .list-type-3 .post-item:first-child .post-title h1, .si-football .mod-gallery .list-type-3 .post-item:first-child .post-title h2, .si-football .mod-gallery .list-type-3 .post-item:first-child .post-title h3 {
+	color: #fff;
+	font-size: 14px
+}
+.si-football .mod-football-gallery .list-type-3 .post-type-photo .post-thumbnail .post-icon {
+	display: none
+}
+.si-football .nd-football-squad .tab-container ul, .si-football .nd-football-stats .tab-container ul, .si-football .nd-widget-fixtures .tab-container ul {
+	display: block
+}
+.si-football .nd-football-squad .tab-container li {
+	width: 25%
+}
+.si-football .nd-football-stats .tab-container li {
+	width: 50%;
+	margin: 0!important
+}
+.si-football .nd-widget-fixtures .tab-container li {
+	width: 33.33%
+}
+.breadcrumb-section li:last-child a {
+	color: gray;
+	cursor: auto
+}
+.breadcrumb-section li a {
+	color: #333;
+	font-size: 11px;
+	padding: 0 10px
+}
+.map-box-head, .map-container h4 {
+	color: #134e8d;
+	position: absolute;
+}
+.nd-secondary-nav .nav-wrap li:hover:before {
+	opacity: 1
+}
+.nd-secondary-nav .nav-wrap li::before {
+	opacity: 0;
+	background-color: #fff;
+	content: "";
+	height: 4px;
+	left: 0;
+	position: absolute;
+	top: 85%;
+	width: 100%
+}
+.nd-secondary-nav .nav-wrap li .nav-more-menu li::before, .nd-secondary-nav .nav-wrap li .nav-more-menu li:hover:before {
+	height: 1px;
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#007db9e8', GradientType=1 );
+	content: ""
+}
+.nd-secondary-nav .nav-wrap li .nav-more-menu li::before {
+	opacity: 1;
+	background: -moz-linear-gradient(left, rgba(0,0,0,0) 0, rgba(42,190,166,.5) 22%, rgba(42,190,166,1) 51%, rgba(42,190,166,.5) 79%, rgba(125,185,232,0) 100%);
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0, rgba(42,190,166,.5) 22%, rgba(42,190,166,1) 51%, rgba(42,190,166,.5) 79%, rgba(125,185,232,0) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,0) 0, rgba(42,190,166,.5) 22%, rgba(42,190,166,1) 51%, rgba(42,190,166,.5) 79%, rgba(125,185,232,0) 100%)
+}
+.nd-secondary-nav .nav-wrap li .nav-more-menu li:hover:before {
+	background: -moz-linear-gradient(left, rgba(0,0,0,0) 0, rgba(42,190,166,.5) 22%, rgba(42,190,166,1) 51%, rgba(42,190,166,.5) 79%, rgba(125,185,232,0) 100%);
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0, rgba(42,190,166,.5) 22%, rgba(42,190,166,1) 51%, rgba(42,190,166,.5) 79%, rgba(125,185,232,0) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,0) 0, rgba(42,190,166,.5) 22%, rgba(42,190,166,1) 51%, rgba(42,190,166,.5) 79%, rgba(125,185,232,0) 100%)
+}
+.nav-more-menu a {
+	display: table-cell;
+	vertical-align: middle
+}
+.list-type-9 .post-item:first-child .post-icon, .show-1024 {
+	display: none
+}
+.nav-more-menu li:before {
+	left: 0
+}
+.map-box-head {
+	left: 10px;
+	top: 5px;
+	text-transform: uppercase;
+	font-size: 12px
+}
+.map-container h4:nth-child(8) {
+	left: 9px;
+	top: 157px
+}
+.map-container h4:nth-child(9) {
+	right: -23px;
+	bottom: 48px
+}
+.map-container h4:nth-child(10) {
+	left: 48px;
+	bottom: 41px
+}
+.map-container h4:nth-child(11) {
+	right: 39px;
+	bottom: 28px
+}
+.widget-venue-details .mod-body {
+	overflow: hidden
+}
+.map-box {
+	padding: 20px;
+	border: 1px solid #d1d0d0;
+	margin: 10px 20px 20px;
+	position: relative
+}
+.si-football .nd-nav .megamenu .list-type-8 .post-title {
+	border-left: 3px solid #1286c6;
+	color: #303030;
+	
+}
+.si-football .menu-section.subMenuNewsData {
+	left: -150px!important
+}
+.si-football .embed-responsive-16by9 {
+	height: 415px;
+	padding-bottom: 56.25%
+}
+.si-football .mod-history-details .nd-team-name {
+	padding-left: 33px
+}
+.si-football .mod-history-details .nd-team-img {
+	position: absolute;
+	top: 50%;
+	transform: translatey(-50%);
+	-o-transform: translatey(-50%);
+	-moz-transform: translatey(-50%);
+	-webkit-transform: translatey(-50%)
+}
+.si-football .mod-history-details .nd-table-td.tbl-team1, .si-football .mod-history-details .nd-table-td.tbl-team2 {
+	position: relative
+}
+.si-football .mod-history-details .nd-group-results .nd-table-th {
+	text-align: center;
+	width: 100px
+}
+.si-football .mod-photo-listing .list-type-8 .post-type-photo .post-thumbnail::before, .si-football .mod-photo-listing .list-type-9 .post-type-photo .post-thumbnail::before {
+	background-color: rgba(0,0,0,.3);
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: 100%
+}
+.mod-photo-listing .list-type-8 .post-type-photo .post-icon, .mod-photo-listing .list-type-9 .post-type-photo .post-icon {
+	background-size: 100% auto;
+	height: 24px;
+	left: 10px;
+	margin: 0;
+	top: 74%;
+	width: 30px
+}
+.si-football .mod-video-listing .list-type-8.post-type-video .post-thumbnail::before, .si-football .mod-video-listing .list-type-9 .post-type-video .post-thumbnail::before {
+	background-color: rgba(0,0,0,.3);
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: 100%
+}
+.si-football .popup-data .nd-social-counts .social-share .counts-pinterest {
+	background-color: #cb2027
+}
+.si-football .popup-data .nd-social-counts .social-share .counts-Gplus {
+	background-color: #dd4b39
+}
+.si-football .popup-data .nd-social-counts .social-share .counts-twitter {
+	background-color: #55acee
+}
+.si-football .popup-data .nd-social-counts .social-share .counts-fb {
+	background-color: #3b5998
+}
+.si-football .popup-data .nd-social-counts .social-share li {
+	border-radius: 50%;
+	height: 32px;
+	margin-left: 5px;
+	width: 32px
+}
+.si-football .popup-data .nd-social-counts .social-share {
+	border: none
+}
+.mod-article-caraousel .slide-nav .nav-left, .mod-article-caraousel .slide-nav .nav-right {
+	transform: translatey(-50%);
+	-moz-transform: translatey(-50%);
+	-webkit-transform: translatey(-50%);
+	-o-transform: translatey(-50%);
+	background-color: rgba(0,0,0,.5);
+	background-size: 33% auto;
+	border-radius: 50%;
+	height: 42px;
+	width: 41px;
+	display: none;
+	z-index: 99
+}
+.mod-article-caraousel:hover .slide-nav .nav-left, .mod-article-caraousel:hover .slide-nav .nav-right {
+	display: block
+}
+.menu-section {
+	width: 600px!important;
+	display: flex
+}
+.si-football .hd3 {
+	position: relative;
+	z-index: 999999
+}
+.nd-gallery-popup .content-wrapper {
+	background-color: transparent
+}
+.si-football .nav-container.sticky-nav {
+	height: 56px
+}
+.si-football .mod-history-listing .list-type-13 .post-thumbnail {
+	background-image: url(../images/microsite/cup-football.html)
+}
+.mod-football-stats.mod-series-stats .data-container {
+	vertical-align: top
+}
+.mod-history-listing .team-record a {
+	color: #1286c6
+}
+.video-icon-new {
+	width: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translatey(-50%) translatex(-50%);
+	-moz-transform: translatey(-50%) translatex(-50%);
+	-webkit-transform: translatey(-50%) translatex(-50%);
+	-o-transform: translatey(-50%) translatex(-50%);
+	left: 50%
+}
+.video-thumnail-new {
+	position: relative
+}
+.video-header {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d5d6d6;
+	margin: 0 10px
+}
+.mod-article .article-detail .stry-ft-img, .video-detail .total-share-container {
+	border: none
+}
+.post-type-video-detail .video-details-new, .si-football .comments_cnt, .si-football .video-post-new:nth-child(2) {
+	margin-bottom: 10px
+}
+.video-detail.nd-mod-header .video-header h1 {
+	color: #161616;
+	font-size: 24px
+}
+.mod.mod-video-listing, .video-content {
+	padding: 10px
+}
+.video-content .video-description p:nth-child(2) {
+	padding-top: 20px
+}
+.video-content .video-heading-new h1 {
+	font-size: 16px;
+	margin-bottom: 10px;
+	text-transform: uppercase
+}
+.si-football .mod-article .article-detail {
+	padding-top: 0;
+	margin-top: -22px
+}
+.si-football .mod-article-caraousel .post-title {
+	height: 40p
+}
+.si-football .photo-crtsy {
+	border-bottom: none;
+	bottom: 3px;
+	position: relative
+}
+.si-football .mod-article-caraousel .post-meta {
+	color: #848484;
+	margin-top: 14px;
+	display: none
+}
+.si-football .mod-article-caraousel .post-item {
+	padding: 7px 11px
+}
+.post-type-video-detail .video-post-new p:nth-child(2) {
+	padding-top: 20px
+}
+.post-type-video-detail .video-post-new:first-child h1 {
+	text-transform: uppercase
+}
+.post-type-video-detail .video-post-new p {
+	padding-top: 10px
+}
+.si-football .info, .si-football .mod-article .article-content p, .si-football .trc_related_container {
+	padding: 0 10px
+}
+.post-type-video-detail .video-post-new h1 {
+	font-size: 15px;
+	margin-top: 5px
+}
+.post-type-video-detail .video-thumnail-new img {
+	width: 100%
+}
+.si-football .mod-article .article-content h1 a, .si-football .mod-article .article-content h2 a {
+	color: #666
+}
+.si-football .comments_cnt {
+	background-color: #fff;
+	padding: 0 10px
+}
+.si-football .trc_elastic .trc_rbox {
+	margin-top: 20px
+}
+.si-football .category a, .si-football .mod-header .post-meta a {
+	color: #1286c6
+}
+.si-football .mod-article-caraousel .post-title h1 a, .si-football .mod-article-caraousel .post-title h2 a, .si-football .mod-article-caraousel .post-title h3 a {
+	color: #717170
+}
+.si-football .ab_organic-thumbnails-a_4x2 .video-title, .si-football .thumbnails-a .syndicatedItem .video-title {
+	color: #1286c6!important
+}
+.mod-article .mod-head a, .si-football .mod-article .article-content a, .si-football .mod-article-caraousel .post-item.active .post-meta a {
+	color: #1286c6
+}
+.si-football .mod-article-caraousel .post-item.active {
+	border-top: none;
+	padding-top: 11px;
+	position: relative
+}
+.si-football .mod-article-caraousel .post-item.active .counts {
+	border: 2px solid #1286c6
+}
+.si-football .mod-article .article-detail .stry-ft-img {
+	margin-bottom: 0
+}
+.photo-crtsy span, .si-football .photo-crtsy p {
+	font-size: 14px
+}
+.photo-crtsy span {
+	padding-right: 70px;
+	display: block
+}
+.si-football .photo-crtsy h4 {
+	position: absolute;
+	right: 0;
+	top: 0
+}
+.si-football .mod-article .article-content p {
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 24px
+}
+.si-football .total-share-container {
+	margin: 0 10px
+}
+.si-football .mod-standing-football h2 {
+	font-size: 17px
+}
+.si-football .nd-widget-fixtures .team1 .tm_nm.team-image, .si-football .nd-widget-fixtures .team2 .tm_nm.team-image {
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	-webkittransform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%)
+}
+.mod-story-listing .list-type-4 .post-item:first-child {
+	margin-top: 0
+}
+.si-football .nd-footer .copyrights a {
+	color: #868585
+}
+.nd-widget-fixtures .mtch_container {
+	min-height: 113px
+}
+.nd-widget-fixtures .nd-match-venue {
+	font-size: 11px!important
+}
+.si-football .highlighter a {
+	color: #fff
+}
+.bottom-ndtv-ad {
+	overflow: hidden;
+	margin-bottom: 15px
+}
+.nd-widget-fixtures .team1 .tm_nm.team-name, .nd-widget-fixtures .team2 .tm_nm.team-name {
+	position: relative;
+	top: 40px
+}
+.si-football .nd-secondary-nav .match-fixture {
+	width: 205px
+}
+.si-football .nav-container.active .nd-secondary-nav .nav-wrap {
+	padding-left: 279px
+}
+.nd-widget-fixtures .team2 .tm_nm.team-name, .si-football .nd-widget-fixtures .team1 .tm_nm {
+	font-size: 11px!important
+}
+.si-football .mod-series-stats .slider-wrapper {
+	width: 94%
+}
+.si-football .mod-group-listing li.nd-title {
+	color: #333
+}
+.select-box option {
+	background-color: #2fcc71;
+	-webkit-appearance: none;
+	color: #fff
+}
+.si-football .mod-news-listing .list-type-1 .post-time {
+	border-left: none
+}
+.append-border {
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 20px!important
+}
+.highlighter-close {
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	color: #fff;
+	z-index: 999;
+	font-size: 16px;
+	font-weight: bolder;
+	padding: 2px 7px;
+	border-radius: 50%;
+	border: 2px solid rgba(255,255,255,.7);
+	top: 10px
+}
+.si-football .highlighter, .si-football .mod-group-listing .nd-content-wrap {
+	position: relative
+}
+.si-football .submenu:hover .menu-section {
+	display: block!important
+}
+.si-football .nd-load-more a {
+	background-color: #1286c6
+}
+.si-football .mod-group-listing .team-image {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%)
+}
+.si-football .mod-group-listing .team-name {
+	padding-left: 37px
+}
+.nd-football-module .nd-match-box .team-a {
+	width: 46%;
+	position: relative
+}
+.nd-football-module .nd-match-box .team-b {
+	width: 45.5%;
+	position: relative
+}
+.nd-football-module .nd-match-box .match-time {
+	width: 8%
+}
+.nd-football-module .nd-match-box .nd-goal-record {
+	width: 40%
+}
+.nd-football-module .nd-match-box .team-a .nd-goal-record {
+	text-align: right
+}
+.nd-football-module .nd-match-box .team-b .nd-goal-record {
+	text-align: left
+}
+.nd-football-module .nd-match-box .team-image {
+	width: 10%
+}
+.nd-football-module .nd-match-box .team-name {
+	width: 44.5%;
+	font-size: 21px
+}
+.nd-football-module .nd-match-box .team-a .team-name {
+	text-align: left;
+	padding-right: 40px
+}
+.nd-football-module .nd-match-box .team-b .team-name {
+	text-align: right;
+	padding-left: 40px
+}
+.nd-football-module .nd-match-box .team-a .team-score {
+	position: absolute;
+	right: 0;
+	font-size: 38px
+}
+.nd-football-module .nd-match-box .team-b .team-score {
+	position: absolute;
+	left: 0;
+	font-size: 38px
+}
+.nd-football-module .nd-match-box .match-time-data {
+	margin: 0 auto
+}
+.nd-football-module .nd-match-box .svg-area {
+	position: relative;
+	background-color: #fff;
+	border-radius: 50%;
+	height: 55px;
+	width: 55px
+}
+.nd-football-module .nd-match-box .svg-area svg {
+	left: -2px!important;
+	position: relative;
+	top: -2px!important
+}
+.nd-football-module .nd-match-box .cirecleText {
+	color: #134e8d;
+	font-weight: 600;
+	margin-left: -10px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%)
+}
+.nd-accord-head, .nd-football-module .nd-match-box .match-time-data .nd-content-wrap {
+	position: relative
+}
+.nd-football-module .nd-match-box .player-name {
+	font-size: 11px
+}
+.nd-football-module .swiper-pagination-bullets {
+	display: inline-block;
+	overflow: hidden;
+	margin-top: 35px
+}
+.nd-football-module .swiper-pagination-bullet {
+	opacity: .5;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	background-color: #134e8d;
+	z-index: 9999;
+	display: inline-block;
+	margin: 2px 5px;
+	cursor: pointer
+}
+.nd-football-module .swiper-pagination-bullet.bullet-active {
+	opacity: 1
+}
+.si-football .nd-btn {
+	background-color: #134e8d
+}
+.si-football .nd-block-section-head.nd-head-txt {
+	background-color: #1286c6
+}
+.si-football .nd-footer .links {
+	border-bottom: 3px solid #134e8d;
+	border-top: 3px solid #134e8d;
+	background-image: url()
+}
+.si-football .nd-footer .links h3 {
+	color:  #134e8d; 
+	width: 50px;
+	font-weight:bold;
+}
+.nd-block-section {
+	margin-bottom: 15px
+}
+.nd-accord-head {
+	cursor: pointer
+}
+.nd-accord .nd-accord-head {
+	padding-left: 40px
+}
+.nd-accord .nd-accord-head.active, .nd-accord .nd-accord-head:hover {
+	background-color: #D7FBE6
+}
+.nd-accord .nd-accord-head.tbl-head.active, .nd-accord .nd-accord-head.tbl-head:hover {
+	background-color: transparent
+}
+.nd-accord .nd-accord-head:before {
+	content: "+";
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	margin-top: -13px;
+	width: 25px;
+	height: 25px;
+	line-height: 21px;
+	border-radius: 50%;
+	border: 1px solid #cecece;
+	font-size: 14px;
+	text-align: center
+}
+.nd-accord .nd-accord-head.active:before {
+	content: "-"
+}
+.nd-accord .tbl-head.nd-accord-head:before {
+	content: "";
+	display: none
+}
+.nd-page-legend {
+	text-transform: uppercase;
+	border: 1px solid #b1b1b1;
+	color: #000
+}
+.nd-page-legend .nd-head-txt {
+	text-align: center;
+	display: table;
+	height: 30px;
+	width: 100%;
+	margin: 5px 0
+}
+.nd-page-legend span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center
+}
+.nd-page-legend .nd-txt-title {
+	border-right: 1px solid #000;
+	min-width: 40px
+}
+.nd-page-legend .data-item {
+	height: 35px
+}
+.nd-info {
+	text-align: center
+}
+.si-football .nd-secondary-nav {
+	background-color: #134e8d
+}
+.si-football .nd-secondary-nav .match-fixture {
+	border: 1px solid #7f9fc1
+}
+.si-football .nd-nav.nd-secondary-nav li:hover {
+	border-bottom-color: transparent
+}
+.mod.mod-gallery.mod-football-gallery, .mod.mod-video.mod-football-video {
+	background-color: #001429
+}
+.nd-football-module {
+	background-image: url(../images/microsite/stadium.html);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	margin-bottom: 15px;
+	height: 250px;
+	text-align: center;
+	color: #fff
+}
+.nd-football-module:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0
+}
+.nd-football-module .slider-item {
+	width: 100%
+}
+.nd-football-module .mod-head {
+	display: inline-block;
+	font-size: 0;
+	border: none;
+	margin-top: 0;
+	padding-top: 0
+}
+.nd-football-module .mod-head h2 {
+	color: #fff;
+	display: table;
+	font-size: 14px;
+	line-height: 16px;
+	height: 30px;
+	margin-bottom: 14px;
+	width: 100%;
+	background-color: transparent;
+	float: none;
+	padding: 0
+}
+.nd-football-module .mod-head h2 span {
+	background-color: #1286c6;
+	display: table-cell;
+	vertical-align: middle;
+	width: 170px;
+	position: relative;
+	top: -3px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.8);
+	transform: skewX(1deg)
+}
+.nd-football-module .mod-head h2 span:after, .nd-football-module .mod-head h2 span:before {
+	border-bottom: 31px solid transparent;
+	border-top: -1px solid transparent;
+	top: 0;
+	display: table;
+	content: "";
+	position: absolute
+}
+.nd-football-module .mod-head h2 span:before {
+	border-right: 9px solid #1286c6;
+	left: -8px
+}
+.nd-football-module .mod-head h2 span:after {
+	border-left: 8px solid #1286c6;
+	right: -7px
+}
+.nd-football-module .mod-head h2:before {
+	background: 0 0
+}
+.nd-football-module .match-venue {
+	font-size: 14px;
+	line-height: 16px;
+	color: #fff;
+	text-align: center;
+	margin: 0 40px 20px
+}
+.nd-football-module .nd-match-box {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden
+}
+.nd-football-module .nd-match-box .team {
+	float: left
+}
+.nd-football-module .nd-team-data {
+	display: table;
+	height: 100px;
+	float: left;
+	padding: 0 6px
+}
+.nd-football-module .match-time-data {
+	display: table;
+	height: 100px
+}
+.nd-football-module .nd-content-wrap {
+	padding: 0 5px
+}
+.nd-football-module .team-image img {
+	max-width: 55px;
+	max-height: 55px;
+	border-radius: 50%
+}
+.nd-football-module .nd-goal-time, .nd-football-module .player-name {
+	font-size: 13px;
+	line-height: 15px;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 5px
+}
+.nd-football-module .team-name, .nd-football-module .team-score {
+	font-size: 30px;
+	text-transform: uppercase
+}
+.nd-football-module .team-score {
+	font-size: 50px
+}
+.nd-football-module .team-b .nd-goal-record, .nd-football-module .team-b .team-image, .nd-football-module .team-b .team-name, .nd-football-module .team-b .team-score {
+	float: right
+}
+.nd-football-module .slide-nav .pagination-block {
+	width: 10px;
+	height: 10px;
+	background: #dbdada;
+	border-radius: 50%;
+	margin: 0 4px;
+	cursor: pointer
+}
+.mod-football-stats .nav-right, .mod-group-listing .nav-left, .mod-group-listing .nav-right {
+	background-image: url(../images/microsite/small-right-arw.html)
+}
+
+.mod-story-listing .list-type-4 .post-item:last-child .post-item-wrapper {
+	border: none
+}
+.mod-story-listing .list-type-4 .post-item:first-child .post-content {
+	height: auto
+}
+.mod-group-listing li {
+	position: relative;
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid #dadada;
+	height: 40px
+}
+.mod-group-listing li.nd-title {
+	text-transform: uppercase;
+	border-bottom: 3px solid #1daf5c;
+	height: 25px;
+	font-size: 14px;
+	color: #5f5f5f
+}
+.mod-group-listing .team-image, .mod-group-listing .team-name {
+	display: inline-block;
+	vertical-align: middle
+}
+.mod-group-listing .team-image img {
+	max-width: 28px;
+	max-height: 28px
+}
+.mod-group-listing .team-name {
+	text-transform: uppercase;
+	padding-left: 6px;
+	font-size: 14px;
+	color: #5f5f5f
+}
+.mod-group-listing .swiper-wrapper {
+	height: auto
+}
+.mod-group-listing .nd-view-more {
+	border: none
+}
+.mod-group-listing .nav-left, .mod-group-listing .nav-right {
+	background-color: transparent;
+	display: block;
+	width: 30px;
+	height: 25px;
+	background-size: auto
+}
+.mod-top-chart .list-type-1 .post-content:before, .mod-top-chart:after, .mod-top-chart:before {
+	content: "";
+	display: table;
+	clear: both
+}
+.mod-group-listing .nav-left {
+	left: 4px;
+	transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg)
+}
+.mod-group-listing .nav-right {
+	right: 4px
+}
+.mod-group-listing .nav-left.disabled, .mod-group-listing .nav-right.disabled {
+	opacity: .5
+}
+.nd-load-more span, .si-football .mod-feature-listing .nd-load-more a {
+	background-color: #1286c6
+}
+.mod.mod-top-chart {
+	background-color: #e6e6e6;
+	padding-left: 0;
+	margin-top: 15px
+}
+.mod-top-chart .mod-body, .mod-top-chart .mod-head {
+	background-color: #fff;
+	position: relative
+}
+.mod-top-chart .list-type-1 .post-title {
+	margin: 0
+}
+.mod-top-chart .list-type-1 .post-meta a {
+	color: inherit
+}
+.mod-top-chart .list-type-1 .post-item:last-child .post-content:before {
+	display: none
+}
+.mod-top-news .wgt-footer .sponsor-powerdby {
+	position: absolute;
+	right: 0;
+	top: -33px;
+	text-align: right;
+	padding-right: 10px
+}
+.mod-fixture-football .nd-group-name, .mod-fixture-football .team-image {
+	top: 50%;
+	margin-top: -20px;
+	position: absolute
+}
+.mod-football-tracker .nd-section-block {
+	background-color: #000;
+	display: table;
+	width: 100%;
+	height: 110px;
+	text-align: center
+}
+.mod-football-tracker .mod-head {
+	background-color: #134e8d;
+	margin-bottom: 10px
+}
+.mod-football-tracker .mod-head h2 {
+	color: #fff
+}
+.mod-football-tracker .data-list {
+	padding: 0 10px 10px
+}
+.mod-football-tracker .data-item {
+	display: table-cell;
+	vertical-align: middle;
+	border: 1px solid #c6c6c6;
+	width: 25%
+}
+.mod-football-tracker .nd-section-block:first-child .data-item:nth-child(even), .mod-football-tracker .nd-section-block:last-child .data-item:nth-child(odd) {
+	background-color: #0d0d0d
+}
+.mod-football-tracker .tracker-title-content {
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+	text-transform: uppercase
+}
+.mod-football-tracker .tracker-count {
+	font-size: 40px;
+	line-height: 42px;
+	color: #fff
+}
+.mod-football-stats .stats-data-wrap {
+	padding: 0 14px
+}
+.mod-football-stats .mod-head {
+	margin: 9px 0 13px
+}
+.mod-football-stats span.team-name {
+	color: #1286c6
+}
+.mod-football-stats .team-name a {
+	color: inherit
+}
+.mod-football-stats .data span.data-value {
+	color: #1286c6
+}
+.mod-football-stats .nav-left {
+	background-image: url(../images/microsite/small-left-arw.html)
+}
+.mod-football-stats .nav-right.disable {
+	background-image: url(../images/microsite/small-right-arw.html)
+}
+.mod-football-stats .nav-left.disable {
+	background-image: url(../images/microsite/small-left-arw-disable.html)
+}
+.mod.mod-profile {
+	padding: 20px 0;
+	margin: 0
+}
+.mod-profile {
+	text-align: center
+}
+.mod-profile .slider-wrapper {
+	margin: 0 45px
+}
+.mod-profile .nd-profile-image img {
+	max-width: 85px;
+	max-height: 85px;
+	border-radius: 50%;
+	border: 1px solid #d0d4d5
+}
+.mod-profile .nd-profile {
+	border: 1px solid #E6E6E6;
+	padding: 0 15px;
+	display: table;
+	width: 100%;
+	height: 150px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box
+}
+.mod-profile .slider-item {
+	padding: 0
+}
+.mod-profile .nd-profile-content {
+	font-size: 14px;
+	line-height: 16px;
+	color: #2d2d2d;
+	text-transform: uppercase;
+	margin-top: 10px;
+	min-height: 34px
+}
+.mod-profile .nd-profile-content a {
+	color: inherit
+}
+.mod-profile .nav-left, .mod-profile .nav-right {
+	margin-top: -25px
+}
+.mod-profile .nav-right {
+	background-image: url(../images/microsite/rt-arrow_grey.html)
+}
+.mod-profile .nav-left {
+	background-image: url(../images/microsite/lt-arrow_grey.html)
+}
+.mod-profile .nav-right.disable {
+	background-image: url(../images/microsite/small-right-arw.html)
+}
+.mod-profile .nav-left.disable {
+	background-image: url(../images/microsite/small-left-arw-disable.html)
+}
+.mod-profile .slider-item.active .nd-profile {
+	background-color: #2ecd71
+}
+.mod-profile .slider-item.active .nd-profile-content {
+	color: #fff
+}
+.mod-profile .slider-item.active .nd-profile-image img {
+	border: 1px solid #fff
+}
+.mod-player-listing .nd-player-name {
+	font-size: 15px;
+	color: #5f5f5f;
+	text-transform: uppercase
+}
+.mod-player-listing .list-type-13 .post-content {
+	text-align: center
+}
+.mod-player-listing .list-type-13.post-list {
+	margin-left: -10px;
+	margin-right: -10px
+}
+.mod-player-listing .nd-block-section-head.nd-head-txt {
+	text-transform: uppercase
+}
+.mod-fixture-football .nd-block-section-head.nd-head-txt {
+	background-color: transparent;
+	border-bottom: 3px solid #20af57;
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 0
+}
+.mod-fixture-football .nd-section-container {
+	padding: 0 10px
+}
+.mod-fixture-football .nd-section-title {
+	display: table;
+	width: 100%;
+	height: 35px;
+	background-color: #325642;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0 10px;
+	margin-top: 10px
+}
+.mod-fixture-football .nd-section-title span {
+	display: table-cell;
+	vertical-align: middle
+}
+.mod-fixture-football .data-item {
+	border-bottom: 1px solid #cfcfcf
+}
+.mod-fixture-football .nd-block-section:last-child .data-item:last-child {
+	border: none
+}
+.mod-fixture-football .match-box {
+	position: relative
+}
+.mod-fixture-football .nd-group-name {
+	left: 15px;
+	text-align: center;
+	padding-right: 26px;
+	border-right: 1px solid #b2b2b2
+}
+.mod-fixture-football .nd-group-name span {
+	display: block
+}
+.mod-fixture-football .nd-group-name .txt-1 {
+	font-size: 14px
+}
+.mod-fixture-football .nd-group-name .txt-2 {
+	font-size: 16px
+}
+.mod-fixture-football .team-box {
+	padding-left: 110px
+}
+.mod-fixture-football .team-image img {
+	max-width: 40px;
+	max-height: 40px;
+	border: 1px solid #d2d2d2;
+	border-radius: 50%
+}
+.mod-fixture-football .team-box .team-a, .mod-fixture-football .team-box .team-b {
+	width: 30%;
+	text-align: center
+}
+.mod-fixture-football .team {
+	height: 60px;
+	color: #353535
+}
+.mod-fixture-football .team-box .nd-match-status {
+	width: 40%;
+	text-align: center;
+	color: #353535
+}
+.mod-fixture-football .team-name {
+	font-size: 15px;
+	line-height: 17px
+}
+.mod-fixture-football .match-venue {
+	font-size: 14px
+}
+.mod-fixture-football .match-score, .mod-fixture-football .match-time {
+	font-size: 15px
+}
+.mod-fixture-football .match-score em {
+	padding-left: 5px
+}
+.mod-fixture-football .team-box .team-a .team-name {
+	text-align: left;
+	padding-left: 50px
+}
+.mod-fixture-football .team-box .team-b .team-name {
+	text-align: right;
+	padding-right: 50px
+}
+.mod-fixture-football .team-box .team-b .team-image {
+	right: 0
+}
+.mod-fixture-football .content-wrap {
+	display: table-cell;
+	vertical-align: middle
+}
+.mod-fixture-football .tab {
+	padding: 0 10px
+}
+.mod-fixture-football .tab ul {
+	display: block;
+	border-bottom: 1px solid #d7d7d7
+}
+.mod-fixture-football .tab ul li {
+	width: 95px;
+	color: #a7a7a7;
+	text-align: center
+}
+.mod-fixture-football .tab li a, .mod-fixture-football .tab li span {
+	display: block
+}
+.mod-fixture-football .select-out:before {
+	content: "\e259";
+	display: table;
+	color: #a7a7a7;
+	font-family: glyphicons-halflings-regular;
+	position: absolute;
+	right: 5px
+}
+.mod-fixture-football .select-box {
+	height: 34px;
+	line-height: 36px;
+	position: relative;
+	text-align: left;
+	width: 94px
+}
+.mod-fixture-football .select-box .select-out {
+	display: block;
+	overflow: hidden;
+	padding-right: 23px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+.mod-fixture-football .select-box select {
+	cursor: pointer;
+	font-size: 14px;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2
+}
+.brckt {
+	border: 1px solid #1caf5e
+}
+.ff-knck-cnt th {
+	background: #d6f5e5;
+	border-left: 1px solid #fff;
+	color: #000
+}
+.ff-knck-cnt th:nth-child(2n+2) {
+	background-color: #c2f0d4
+}
+.brckt-tm {
+	background: 0 0
+}
+.brckt-tm-mtch {
+	border-right: 5px solid #d6f5e5;
+	background-color: #d6f5e5
+}
+.ff-scr-box {
+	background: 0 0;
+	border: none
+}
+.cntrtrng {
+	background-image: url(../images/microsite/table_tri.html);
+	right: -11px
+}
+.brckt-wrp-rgt .brckt-tm-mtch {
+	border-left: 5px solid #D6F5E5
+}
+.brckt-wrp-rgt .cntrtrng {
+	background-image: url(../images/microsite/table_tri_lft.html);
+	left: -11px
+}
+.brckt-wrp-fl .brckt-tm-mtch {
+	border-left: 5px solid #d6f5e5
+}
+.mod-standing-football {
+	padding: 15px 20px
+}
+.mod-standing-football .nd-block-content {
+	padding: 0
+}
+.mod-standing-football .nd-block-section-head.nd-head-txt {
+	background-color: transparent;
+	border-bottom: 3px solid #20af57;
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 0;
+	height: 40px
+}
+.mod-standing-football .nd-select-head, .mod-standing-football .tab ul {
+	display: inline-block;
+	vertical-align: middle
+}
+.mod-standing-football .nd-select-head {
+	width: 75px;
+	text-transform: uppercase;
+	color: #858585;
+	height: 30px;
+	position: relative
+}
+.mod-standing-football .nd-select-head:after {
+	content: "\e258";
+	display: inline-block;
+	font-family: glyphicons-halflings-regular;
+	font-weight: 700;
+	color: #9c9c9c;
+	position: absolute;
+	font-size: 12px;
+	top: 50%;
+	right: 6px;
+	margin-top: -13px
+}
+.mod-standing-football .tab-container .tab li {
+	font-size: 16px;
+	height: 30px;
+	padding: 0 14px
+}
+.mod-standing-football .tab-container .tab {
+	margin: 0 0 15px;
+	text-align: left
+}
+.mod-standing-football .nd-table {
+	border-bottom: 1px solid #cecece
+}
+.mod-standing-football .nd-table-th {
+	color: #858585
+}
+.mod-standing-football .nd-table-td {
+	color: #000
+}
+.si-football .sidebar-widget-wrapper .mod-head h2, .si-football .sidebar-widget-wrapper .mod-head h3, .si-football .tab-container .tab li:hover {
+	color: #134e8d
+}
+.mod-standing-football .nd-table-td, .mod-standing-football .nd-table-th {
+	width: 40px;
+	height: 40px
+}
+.mod-standing-football .nd-table-td.tbl-team, .mod-standing-football .nd-table-th.tbl-team {
+	text-align: left;
+	width: 321px;
+	padding-left: 15px
+}
+.mod-standing-football .nd-table-td:nth-child(1), .mod-standing-football .nd-table-th:nth-child(1) {
+	text-align: center;
+	width: 57px
+}
+.mod-standing-football .nd-qualify-team span {
+	border: 1px solid #858585;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	border-right: 4px solid #30ca74
+}
+.nd-qualify-info {
+	display: table;
+	width: 100%;
+	height: 30px;
+	margin-top: 15px
+}
+.nd-qualify-info span {
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase
+}
+.nd-qualify-info span:last-child {
+	padding-left: 5px
+}
+.nd-qualify-info .nd-txt-1 {
+	border: 1px solid #858585;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	border-right: 4px solid #30ca74
+}
+.mod-history-page .total-share-container:after, .mod-history-page .total-share-container:before, .si-football .si-footballStats .total-share-container:after, .si-football .si-footballStats .total-share-container:before {
+	display: table;
+	clear: both;
+	content: ""
+}
+.si-football .si-footballStats .si-subtab li, .si-football .si-footballStats .si-tab {
+	background-color: #134e8d
+}
+.mod-stats-detail-football {
+	padding: 0 10px
+}
+.nd-box {
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0YzNmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMDkxY2UiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, rgba(81, 245, 150) 0, rgba(32, 189, 98) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(81, 245, 150)), color-stop(100%, rgba(32, 189, 98)));
+	background: -webkit-linear-gradient(top, rgba(81, 245, 150) 0, rgba(32, 189, 98) 100%);
+	background: -o-linear-gradient(top, rgba(81, 245, 150) 0, rgba(32, 189, 98) 100%);
+	background: -ms-linear-gradient(top, rgba(81, 245, 150) 0, rgba(32, 189, 98) 100%);
+	background: linear-gradient(to bottom, #51f596 0, #20bd62 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c3fe', endColorstr='#1091ce', GradientType=0)
+}
+.si-football .si-footballStats .nd-mod-header .mod-head {
+	max-width: 550px
+}
+.si-footballStats .total-share-container .nd-right {
+	position: relative;
+	top: 8px
+}
+.mod-history-page .total-share-container {
+	height: auto
+}
+.mod-history-page .total-share-container .nd-left {
+	max-width: 65%
+}
+.mod-venue-details .nd-txt-section .nd-history-summary::before {
+	margin-top: -50px
+}
+.mod-venue-details .nd-block-section-body br {
+	display: block;
+	margin-top: 10px
+}
+.wgt .mod-venue-listing h2 {
+	background-color: transparent;
+	height: auto;
+	line-height: 100%
+}
+.wgt .mod-venue-listing .post-item:first-child .post-title h2 {
+	font-size: 13px
+}
+.si-football .sidebar-widget-wrapper .mod-head .select-box {
+	width: 120px;
+	background-color: #134e8d
+}
+.si-football .tab-container .tab li.active {
+	border-bottom: 3px solid #134e8d;
+	color: #134e8d
+}
+.si-football .nd-table-header {
+	background-color: #1286c6
+}
+.nd-widget-fixtures .row {
+	margin: 0
+}
+.nd-widget-fixtures .wgt {
+	background-color: inherit
+}
+.nd-widget-fixtures .tab {
+	margin-bottom: 6px
+}
+.nd-widget-fixtures .score_teaser {
+	width: 160px
+}
+.nd-widget-fixtures .mtchbox:after, .nd-widget-fixtures .mtchbox:before {
+	content: "";
+	clear: both;
+	display: table
+}
+.nd-widget-fixtures .mtchbox {
+	display: table;
+	width: 100%;
+	height: 60px
+}
+.nd-widget-fixtures .mtchbox .team1, .nd-widget-fixtures .mtchbox .team2 {
+	display: table-cell;
+	vertical-align: middle;
+	width: 30%;
+	position: relative;
+	top: auto
+}
+.nd-widget-fixtures .team1 .tm_nm, .nd-widget-fixtures .team2 .tm_nm {
+	float: none
+}
+.nd-widget-fixtures .main-tab {
+	text-align: center;
+	margin: 5px 0
+}
+.nd-widget-fixtures .main-tab>ul {
+	display: inline-block;
+	vertical-align: middle
+}
+.nd-widget-fixtures .main-tab li.active {
+	background-color: #2B5A3F;
+	color: #fff
+}
+.fb-scr .fb-mtch-time {
+	color: red
+}
+.nd-widget-fixtures .mtchbox .score_teaser {
+	display: table-cell;
+	vertical-align: middle;
+	width: 40%
+}
+.nd-widget-fixtures .scr-bar2 ul li {
+	background: 0 0;
+	padding: 0 5px;
+	margin: 0
+}
+.nd-widget-fixtures .scr-bar2 ul li a {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit
+}
+.nd-widget-fixtures .scr-bar2 ul li:last-child {
+	padding: 0 12px
+}
+.nd-widget-fixtures .scr-bar2 {
+	background: 0 0;
+	padding: 0
+}
+.nd-widget-fixtures .mtch, .nd-widget-fixtures .mtch_container {
+	background-color: inherit;
+	border-bottom: 1px solid #d5d6d6
+}
+.nd-widget-fixtures .mtch {
+	margin-bottom: 10px
+}
+.nd-widget-fixtures .mtch:last-child {
+	margin: 0;
+	border: none
+}
+.nd-widget-fixtures .nd-match-count, .nd-widget-fixtures .nd-match-venue {
+	font-size: 13px;
+	color: #575858;
+	text-align: center
+}
+.nd-widget-fixtures .team-image img {
+	border-radius: 50%;
+	max-height: 40px;
+	max-width: 40px
+}
+.nd-widget-fixtures .team-name {
+	font-size: 20px;
+	color: #1eae5b
+}
+.nd-widget-fixtures .nd-match-date {
+	font-size: 20px;
+	color: #575858;
+	line-height: 20px
+}
+.nd-widget-fixtures .nd-match-time {
+	font-size: 14px;
+	color: #ca3b2c;
+	line-height: 14px
+}
+.widget-points-table.nd-football-pt {
+	background-color: #172319
+}
+.widget-points-table.nd-football-pt .tab-container {
+	padding: 0 20px
+}
+.widget-points-table.nd-football-pt .mod-head {
+	padding-bottom: 17px
+}
+.widget-points-table.nd-football-pt .tab {
+	margin-bottom: 15px;
+	border: none;
+	text-align: right
+}
+.widget-points-table.nd-football-pt .tab li span {
+	background: 0 0
+}
+.widget-points-table.nd-football-pt .tab li {
+	color: #fff;
+	height: 25px
+}
+.widget-points-table.nd-football-pt .tab li a {
+	color: inherit
+}
+.widget-points-table.nd-football-pt .tab li.active {
+	border: none;
+	font-weight: 700
+}
+.widget-points-table.nd-football-pt .tab li.active span {
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+	color: #2bb05f;
+	border-radius: 50%;
+	line-height: 25px
+}
+.widget-points-table.nd-football-pt .tab .group-title {
+	float: left;
+	color: #fff
+}
+.widget-winner-history .team-name {
+	display: table;
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #1eab5f;
+	border-bottom: 1px solid #d7d7d7
+}
+.widget-winner-history .team-name a, .widget-winner-history .team-name span {
+	display: table-cell;
+	vertical-align: middle
+}
+.widget-winner-history .team-image {
+	padding: 10px 20px
+}
+.widget-winner-history .team-image img {
+	border: 1px solid #8c8c8c
+}
+.widget-poll input[type=radio]:checked+label:before {
+	background: #134e8d;
+	box-shadow: inset 0 0 0 4px #fff
+}
+.nd-clear {
+	float: right;
+	font-size: 12px;
+	padding: 0 4px
+}
+.nd-clear a {
+	background-color: #134e8d;
+	padding: 7px 17px;
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	line-height: 21px
+}
+
+@media (max-width:1200px) {
+.mod-story-listing .list-type-4 .post-item:nth-child(2) {
+	margin-top: 3px
+}
+.mod-story-listing .list-type-4 .post-content {
+	padding: 0 0 5px 10px
+}
+.mod-story-listing .list-type-4 .post-item:before {
+	bottom: 3px
+}
+.nd-football-module .team-name, .nd-football-module .team-score {
+	font-size: 24px
+}
+.nd-football-module .team-score {
+	font-size: 40px
+}
+.nd-football-module .nd-team-data {
+	padding: 0
+}
+.mod-fixture-football .team-name {
+	font-size: 14px;
+	line-height: 16px
+}
+.mod-standing-football .nd-table-td, .mod-standing-football .nd-table-th {
+	width: 44px
+}
+.mod-standing-football .nd-table-td.tbl-team, .mod-standing-football .nd-table-th.tbl-team {
+	text-align: left;
+	width: 205px;
+	padding-left: 15px
+}
+.mod-standing-football .nd-table-td:nth-child(1), .mod-standing-football .nd-table-th:nth-child(1) {
+	text-align: center;
+	width: 57px
+}
+.mod-fixture-football .team-box {
+	padding-left: 0
+}
+.si-football .nd-nav li {
+	padding: 0 10px
+}
+}
+
+@media (max-width:992px) {
+.mod-story-listing .list-type-4 .post-item, .mod-story-listing .list-type-4 .post-item:first-child {
+	width: 100%
+}
+.mod-story-listing .list-type-4 .post-item:before {
+	bottom: 0
+}
+}
+
+@media screen and (min-width:1201px) {
+.nd-football-module .nd-match-box .team-name {
+	font-size: 24px
+}
+.nd-football-module .nd-match-box .team-a .team-score, .nd-football-module .nd-match-box .team-b .team-score {
+	font-size: 40px
+}
+.nd-football-module .nd-match-box .player-name {
+	font-size: 13px
+}
+}
+
+@media screen and (min-width:1024px) and (max-width:1090px) {
+.sticky-nav.active .nd-secondary-nav.nd-nav li.nav-more .nav-more-menu {
+	left: -80px
+}
+.nd-secondary-nav.nd-nav li.nav-more .nav-more-menu {
+	left: -50px
+}
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+span.nd-menu-select-out {
+	font-size: 11px
+}
+.si-microsite #side-nav ul li a {font-size:11px;}
+.mod-player-listing .nd-player-name, .si-football .mod-team-listing .nd-team-name {
+	font-size: 11px
+}
+.mod-team-listing.nd-football-listing .list-type-13 .post-content {
+	padding-left: 72px;
+	text-align: right
+}
+.mod-team-listing.nd-football-listing .list-type-13 .post-thumbnail {
+	height: 70px;
+	width: 70px;
+	margin-top: -36px
+}
+.nd-widget-fixtures .mtch_center {
+	margin: 0 -10px
+}
+.nd-gallary-wrapper .social-share li a {
+	height: 25px;
+	width: 25px;
+	background-size: 25px auto
+}
+.si-football .nd-nav li {
+	padding: 0 12px
+}
+.nd-secondary-nav .match-fixture .team-detail {
+	font-size: 14px
+}
+.si-football .nav-container.active .nd-secondary-nav .nav-wrap {
+	padding-left: 247px;
+	position: relative;
+	left: 8px
+}
+.menu-section.subMenuPhotoData, .menu-section.subMenuVideoData {
+	left: -496px!important
+}
+.si-football .sticky-nav.active .menu-section.subMenuPhotoData, .si-football .sticky-nav.active .menu-section.subMenuVideoData {
+	left: -506px!important
+}
+.si-football .nav-container.active .match-fixture {
+	left: 162px;
+	width: 90px!important
+}
+.si-football .sticky-nav.active .menu-section.subMenuNewsData {
+	left: -380px!important
+}
+.si-football .menu-section.subMenuNewsData {
+	left: -350px!important
+}
+.show-1024 {
+	display: block
+}
+.hide-1024, .si-football .mod-football-stats .series-stats-cat .slider .slide-list li:last-child {
+	display: none
+}
+.mod-photo-listing .list-type-8 .post-type-photo .post-icon, .mod-photo-listing .list-type-9 .post-type-photo .post-icon {
+	background-size: 100% auto;
+	height: 24px;
+	left: 10px;
+	margin: 0;
+	top: 68%;
+	width: 30px
+}
+.si-football .si-table-td>span {
+	font-size: 11px
+}
+.si-football .si-footballStats .si-table-th, .si-footballStats .si-table-td {
+	padding: 0 6px;
+	font-size: 11px
+}
+.si-football .fb-scr .fb-mtch-time {
+	font-size: 11px;
+	height: 33px;
+	width: 33px
+}
+.mod-fixture-football .nd-block-section-head.nd-head-txt {
+	font-size: 17px
+}
+.nd-widget-fixtures .nd-match-venue {
+	font-size: 10px!important;
+	margin: 0 auto;
+	width: 40px
+}
+.fb-goal {
+	font-size: 20px
+}
+.fb-goal span {
+	font-size: 12px!important
+}
+.si-football .mod-video .list-type-4 .post-item .post-meta {
+	font-size: 10px
+}
+.si-football .mod-video .list-type-4 .post-item:first-child .post-meta {
+	font-size: 11px
+}
+.si-football .mod-gallery .list-type-3 .post-meta {
+	font-size: 10px
+}
+.post-type-photo .post-icon {
+	background-color: rgba(0,0,0,.3);
+	background-size: 100% auto;
+	height: 23px;
+	width: 29px
+}
+.si-football .mod-video .list-type-4 .post-item {
+	margin-bottom: 10px
+}
+.widget-team-squad .player-detail span {
+	font-size: 9px
+}
+.mod-football-tracker .tracker-title-content {
+	font-size: 13px
+}
+.mod-football-tracker .tracker-count {
+	font-size: 32px
+}
+.mod-story-listing .list-type-4 .post-item {
+	margin: 0
+}
+.mod-story-listing .list-type-4 .post-content {
+	height: 49px
+}
+.nd-football-module .nd-match-box {
+	max-width: 950px
+}
+.nd-football-module .nd-match-box .team-b {
+	width: 44.5%
+}
+.nd-football-module .nd-match-box .team-name {
+	font-size: 16px
+}
+.nd-football-module .nd-match-box .team-a .team-score, .nd-football-module .nd-match-box .team-b .team-score {
+	font-size: 30px
+}
+.nd-football-module .nd-match-box .player-name {
+	font-size: 9px
+}
+.nd-widget-fixtures .scr-bar2 ul li a {
+	font-size: 10px!important
+}
+.mod-group-listing .team-name {
+	font-size: 12px!important
+}
+.si-football .nd-nav li {
+	font-size: 11px
+}
+}
+.search-bar input[type=search], .search-bar input[type=text] {
+	max-width: 324px
+}
+.search-bar input[type=submit] {
+	background-image: url(../images/search-icohome.png);
+	background-position: 0 0
+}
+.mod-article .article-content .article-detail a {
+	color: #000;
+	position: relative
+}
+.mod-article .article-content .article-detail p>a {
+	color: #000;
+	position: relative;
+	vertical-align: top
+}
+.mod-article .article-content .article-detail p>a:hover {
+	color: #134e8d
+}
+.mod-article .article-content .article-detail p>a::before {
+	border-bottom: 1px solid #134e8d;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	width: 100%
+}
+.mod-article .article-content .article-detail .info a {
+	color: #134e8d;
+	display: inline
+}
+.si-football .nd-gallery .mod-head .post-content span::before {
+	background-color: #1286C6
+}
+.dont-miss-corner {
+	background-color: #1286c6
+}
+.dont-icon {
+	background-image: url(../images/microsite/olympic/dontmiss-right.html)
+}
+.wgt h2 {
+	background-color: #134e8d
+}
+.cnwidget {
+	width: 100%!important
+}
+.nd-nav li.submenu.listmenu ul {
+	display: none;
+	min-width: 100px;
+	top: 47px;
+	background-color: #1286C6
+}
+.nd-nav li.submenu.listmenu:hover>ul {
+	display: block
+}
+.nd-nav li.submenu.listmenu li {
+	display: table;
+	height: 40px;
+	padding: 0;
+	border-bottom: 1px solid #fff
+}
+.nd-nav li.submenu.listmenu li:hover {
+	background-color: #134E8D
+}
+.nd-nav.nd-secondary-nav li.listmenu:hover li {
+	border-bottom-color: #fff
+}
+.nd-nav li.submenu.listmenu li:last-child {
+	border-bottom: none
+}
+.nd-nav li.listmenu li a {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 10px
+}
+.nd-secondary-nav .nav-wrap li.listmenu li::before {
+	display: none
+}
+.nd-nav li.submenu:after {
+	margin-top: -7px
+}
+.mod.mod-sports-detail {
+	padding-top: 20px
+}
+.clear-wrap:after, .clear-wrap:before {
+	clear: both;
+	content: "";
+	display: table
+}
+.mod.mod-sports-listing {
+	padding: 20px;
+	position: relative
+}
+.sports-listing:after, .sports-listing:before {
+	clear: both;
+	content: "";
+	display: table
+}
+.sports-item {
+	float: left;
+	width: 25%;
+	padding: 0 15px;
+	text-align: center;
+	margin-bottom: 30px
+}
+.sports-item .content-box {
+	background-color: #f5f5f5;
+	padding-top: 6px
+}
+.sports-item .sports-title {
+	color: #134e8d;
+	font-size: 16px;
+	height: 40px;
+	line-height: 16px;
+	text-transform: uppercase;
+	display: table;
+	width: 100%;
+	padding: 0 10px
+}
+.sports-item .sports-title span {
+	display: table-cell;
+	vertical-align: middle
+}
+.sports-ico {
+	height: 120px;
+	position: relative;
+	padding-top: 15px
+}
+.sports-ico span {
+	background-repeat: no-repeat;
+	background-image: url(../images/microsite/olympic/sports-ico.html);
+	background-position: 0 0;
+	display: block;
+	height: 90px;
+	width: 90px;
+	margin: auto
+}
+.sports-archery .sports-ico span {
+	background-position: -18px 0
+}
+.sports-artisticgymnastics .sports-ico span {
+	background-position: -808px -458px
+}
+.sports-athletics .sports-ico span {
+	background-position: -19px -647px
+}
+.sports-badminton .sports-ico span {
+	background-position: -18px -461px
+}
+.sports-basketball .sports-ico span {
+	background-position: -18px -94px
+}
+.sports-beachvolleyball .sports-ico span {
+	background-position: -17px -829px
+}
+.sports-boxing .sports-ico span {
+	background-position: -285px -3px
+}
+.sports-canoeslalom .sports-ico span {
+	background-position: -18px -924px
+}
+.sports-canoesprint .sports-ico span {
+	background-position: -18px -370px
+}
+.sports-cyclingbmx .sports-ico span {
+	background-position: -16px -275px
+}
+.sports-cyclingmountainbike .sports-ico span {
+	background-position: -287px -922px
+}
+.sports-cyclingroad .sports-ico span {
+	background-position: -18px -554px
+}
+.sports-cyclingtrack .sports-ico span {
+	background-position: -20px -738px
+}
+.sports-diving .sports-ico span {
+	background-position: -17px -184px
+}
+.sports-equestrian .sports-ico span {
+	background-position: -287px -555px
+}
+.sports-fencing .sports-ico span {
+	background-position: -285px -190px
+}
+.sports-football .sports-ico span {
+	background-position: -288px -737px
+}
+.sports-golf .sports-ico span {
+	background-position: -288px -371px
+}
+.sports-handball .sports-ico span {
+	background-position: -288px -828px
+}
+.sports-hockey .sports-ico span {
+	background-position: -571px -5px
+}
+.sports-judo .sports-ico span {
+	background-position: -287px -96px
+}
+.sports-marathonswimming .sports-ico span {
+	background-position: -288px -281px
+}
+.sports-modernpentathlon .sports-ico span {
+	background-position: -808px -371px
+}
+.sports-rhythmicgymnastics .sports-ico span {
+	background-position: -288px -464px
+}
+.sports-rowing .sports-ico span {
+	background-position: -286px -646px
+}
+.sports-rugbysevens .sports-ico span {
+	background-position: -573px -733px
+}
+.sports-sailing .sports-ico span {
+	background-position: -571px -555px
+}
+.sports-shooting .sports-ico span {
+	background-position: -568px -827px
+}
+.sports-swimming .sports-ico span {
+	background-position: -570px -645px
+}
+.sports-synchronisedswimming .sports-ico span {
+	background-position: -572px -99px
+}
+.sports-tabletennis .sports-ico span {
+	background-position: -573px -369px
+}
+.sports-taekwondo .sports-ico span {
+	background-position: -571px -463px
+}
+.sports-tennis .sports-ico span {
+	background-position: -575px -280px
+}
+.sports-trampolinegymnastics .sports-ico span {
+	background-position: -571px -188px
+}
+.sports-triathlon .sports-ico span {
+	background-position: -808px -635px
+}
+.sports-volleyball .sports-ico span {
+	background-position: -570px -919px
+}
+.sports-waterpolo .sports-ico span {
+	background-position: -808px -809px
+}
+.sports-weightlifting .sports-ico span {
+	background-position: -808px -282px
+}
+.sports-wrestling .sports-ico span {
+	background-position: -807px -193px
+}
+.mod-sports-widget .slider-wrapper {
+	padding: 10px 0;
+	margin: 0 35px
+}
+.mod-sports-widget .sports-listing {
+	margin: 0 -10px
+}
+.mod-sports-widget .sports-item {
+	margin-bottom: 0;
+	padding: 0 10px
+}
+.history-timeline .nav-left, .mod-sports-widget .nav-left {
+	background-image: url(../images/microsite/olympic/nav-left.html)
+}
+.history-timeline .nav-right, .mod-sports-widget .nav-right {
+	background-image: url(../images/microsite/olympic/nav-right.html)
+}
+.mod-sports-widget .nav-left, .mod-sports-widget .nav-right {
+	width: 35px;
+	margin-top: -35px
+}
+.history-timeline .nav-left, .history-timeline .nav-right {
+	width: 50px;
+	height: 50px;
+	margin-top: -25px
+}
+.history-content {
+	padding: 20px;
+	position: relative
+}
+.history-item {
+	font-size: 16px;
+	line-height: 26px;
+	position: relative;
+	height: 250px;
+	overflow-y: auto
+}
+.history-item p {
+	margin-bottom: 15px
+}
+.history-item p:last-child {
+	margin-bottom: 0
+}
+.history-timeline .slider {
+	height: 50px;
+	background-color: #f3f9fd;
+	position: relative
+}
+.history-timeline .slider-wrapper {
+	margin: 0 50px
+}
+.history-timeline .slide-item {
+	width: 110px;
+	position: relative;
+	display: table;
+	float: left;
+	height: 50px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 14px;
+	color: rgba(0,0,0,.6);
+	padding: 0 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 14px;
+	background-color: #dcedf5
+}
+.history-timeline .slide-item .content-wrap {
+	display: table-cell;
+	vertical-align: middle
+}
+.history-timeline .slide-item.active {
+	background-color: #134e8d;
+	color: #fff
+}
+.history-timeline .slide-item:before {
+	content: "";
+	width: 1px;
+	height: 30px;
+	background-color: #cad8de;
+	position: absolute;
+	top: 10px;
+	left: 0
+}
+.history-timeline .slide-item.active+.slide-item:before, .history-timeline .slide-item.active:before {
+	display: none
+}
+.history-item>h4 {
+	margin-bottom: 15px;
+	text-transform: uppercase
+}
+.mod-medaltally .mod-body {
+	padding: 10px 20px 0;
+	position: relative
+}
+.mod-medaltally .nd-table-th {
+	background-color: #e7edf3;
+	height: 35px;
+	color: #134e8d
+}
+.mod-medaltally .nd-table-td, .mod-medaltally .nd-table-th {
+	padding: 0 10px;
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+}
+.select-box .select-out, .viewmore span {
+	font-size: 12px;
+	text-transform: uppercase
+}
+.mod-medaltally .nd-table-td {
+	color: #000;
+	height: 40px
+}
+.mod-medaltally .nd-table-tr.nd-ico-row .nd-table-th {
+	background-color: transparent;
+	text-indent: -9999px;
+	border-bottom: 1px solid #cfcfcf;
+	height: 40px
+}
+.nd-table-tr.nd-ico-row .nd-table-th span {
+	display: none;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-image: url(../images/microsite/olympic/medals.html);
+	margin: auto
+}
+.nd-table-tr.nd-ico-row .nd-table-th.tblSilver span {
+	display: block;
+	background-position: -76px 0
+}
+.nd-table-tr.nd-ico-row .nd-table-th.tblGold span {
+	display: block;
+	background-position: 0 0
+}
+.nd-table-tr.nd-ico-row .nd-table-th.tblBronze span {
+	display: block;
+	background-position: -156px 0
+}
+.nd-table-td.tblCountry, .nd-table-td.tblRank, .nd-table-th.tblCountry, .nd-table-th.tblRank {
+	text-align: left
+}
+.nd-table-td.tblRank, .nd-table-th.tblRank {
+	width: 80px
+}
+.nd-table-td.tblBronze, .nd-table-td.tblGold, .nd-table-td.tblSilver, .nd-table-td.tblTotal, .nd-table-th.tblBronze, .nd-table-th.tblGold, .nd-table-th.tblSilver, .nd-table-th.tblTotal {
+	width: 85px
+}
+.nd-table-tr.active .nd-table-td {
+	background-color: #9d9e9f;
+	color: #fff
+}
+.viewmore {
+	text-align: center;
+	padding: 30px 0;
+	border-top: 1px solid #d8d8d8;
+	margin-top: 20px
+}
+.viewmore span {
+	color: #666
+}
+.select-filters {
+	margin-bottom: 20px;
+	position: relative
+}
+.select-filters .select-box {
+	background-color: #134e8d;
+	border: 1px solid #134e8d;
+	color: #fff;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 30px 0 10px;
+	position: relative;
+	white-space: nowrap;
+	width: 220px;
+	background-image: url(../images/microsite/olympic/select-arrow.html);
+	background-repeat: no-repeat;
+	background-position: 96% center;
+	margin: 0 2px
+}
+.select-filters .select-box:first-child {
+	margin-left: 0
+}
+.select-filters .select-box:last-child {
+	margin-right: 0
+}
+.select-box select {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer
+}
+.select-box .select-out {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+.latest-tab {
+	background-color: #d51c3a;
+	color: #fff;
+	cursor: pointer;
+	display: table;
+	float: left;
+	height: 50px;
+	padding: 0 6px;
+	text-transform: uppercase
+}
+.latest-tab>span {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1
+}
+.latest-tab:before {
+	content: "";
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(255,255,255,.2)
+}
+.result-datenav {
+	margin-top: 10px;
+	position: relative;
+	margin-bottom: 10px
+}
+.result-datenav .slider-wrap {
+	margin-left: 61px;
+	position: relative;
+	overflow: hidden
+}
+.result-datenav .slide-item {
+	display: table;
+	float: left;
+	height: 50px;
+	position: relative;
+	background-color: #1286c6;
+	text-align: center;
+	color: #fff;
+	width: 5.9%;
+	cursor: pointer
+}
+.result-datenav .slide-item .slide-content {
+	display: table-cell;
+	vertical-align: middle
+}
+.result-datenav .slide-item span {
+	display: block;
+}
+.result-datenav .txt {
+	font-size: 10px;
+	text-transform: uppercase
+}
+.result-datenav .num {
+	font-size: 16px;
+	line-height: 14px
+}
+.result-datenav .slide-item::before {
+	background-color: #0e6b9e;
+	content: "";
+	height: 30px;
+	left: 0;
+	position: absolute;
+	top: 10px;
+	width: 1px
+}
+.result-content .nd-table-th, .result-title {
+	height: 35px
+}
+.result-datenav .slide-item.active {
+	background-color: #134e8d
+}
+.result-datenav .slide-item.active+div:before, .result-datenav .slide-item.active:before {
+	display: none
+}
+.mod-olympic-result .select-filters {
+	text-align: right
+}
+.mod-olympic-result .select-filters .select-box {
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+	text-align: left
+}
+.results-container {
+	padding: 0 20px
+}
+.result-item, .result-list {
+	position: relative
+}
+.result-item {
+	margin-bottom: 20px;
+	border-bottom: 5px solid #e6e6e6
+}
+.result-title {
+	background-color: #f3f9fc;
+	color: #1286c6;
+	display: table;
+	padding: 0 10px;
+	width: 100%;
+	font-size: 18px
+}
+.result-title span {
+	display: table-cell;
+	vertical-align: middle
+}
+.result-content .nd-table-th {
+	width: 160px;
+	background-color: #eee;
+	font-size: 16px;
+	text-transform: none
+}
+.result-content .nd-table-td {
+	font-size: 14px;
+	color: #2e2e2e;
+	line-height: 14px;
+	position: relative;
+	text-transform: none
+}
+.result-content .nd-table-td.tblCountry {
+	padding-left: 40px;
+	position: relative
+}
+.result-content .nd-table-td.tblCountry .team-image {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -15px;
+	width: 30px
+}
+.tblCountry .team-image img {
+	display: block;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+.result-content .nd-table-td.tblMedals>span {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 30px;
+	margin: auto;
+	text-indent: -9999px;
+	width: 30px;
+	background-image: url(../images/microsite/olympic/medals.html);
+	vertical-align: middle
+}
+.result-content .nd-table-td.tblMedals>span.medal-silver {
+	background-position: -76px 0
+}
+.result-content .nd-table-td.tblMedals>span.medal-bronze {
+	background-position: -156px 0
+}
+.nd-secondary-nav .nav-wrap {
+	float: left
+}
+.navbar-sponsor {
+	float: right;
+	font-size: 0;
+	padding-right: 10px;
+	text-align: right;
+	margin-top: 0
+}
+.navbar-sponsor .sponsor-list:after, .navbar-sponsor .sponsor-list:before {
+	clear: both;
+	content: "";
+	display: table
+}
+.navbar-sponsor .sponsor-item {
+	display: inline-block;
+	margin: 0 5px;
+	vertical-align: middle
+}
+.sponsor-list>span {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	height: 54px;
+	margin-right: 5px;
+	line-height: 54px;
+	vertical-align: middle
+}
+.sponsor-powerdby {
+	position: absolute;
+	right: 10px;
+	top: 4px
+}
+.sponsor-powerdby span, .sponsor-powerdby>div {
+	color: #777;
+	display: inline-block;
+	font-size: 8px;
+	vertical-align: middle;
+	margin-right: 5px
+}
+.sponsor-powerdby img {
+	height: 16px;
+	width: auto
+}
+.wgt-footer-sponsor {
+	background-color: #fff
+}
+.wgt-footer-sponsor .wgt-footer {
+	clear: both;
+	padding: 5px;
+	background-color: #fff
+}
+.wgt-footer-sponsor .wgt-footer:after, .wgt-footer-sponsor .wgt-footer:before {
+	clear: both;
+	content: "";
+	display: table
+}
+.wgt-footer .sponsor-powerdby {
+	position: relative;
+	right: 0;
+	top: 0;
+	text-align: right;
+	padding-right: 10px
+}
+.wgt-footer .sponsor-powerdby img {
+	height: 20px;
+	width: auto
+}
+.wgt-footer .sponsor-powerdby span, .wgt-footer .sponsor-powerdby>div {
+	font-size: 10px;
+	vertical-align: middle
+}
+.wgt-footer-sponsor .sponsor-powerdby {
+	right: 0;
+	top: 0
+}
+.map-container {
+	margin: 10px auto 0;
+	position: relative;
+	width: 100%
+}
+.map-container img {
+	height: auto;
+	width: 100%
+}
+.map-container a {
+	color: #fff
+}
+.map-container h4 span {
+	background-color: transparent;
+	border-radius: 0;
+	display: inline-block;
+	height: auto;
+	margin: 0;
+	vertical-align: middle;
+	width: auto;
+	z-index: 0;
+	position: relative
+}
+.map-container h4 span::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	background-color: #289bdb;
+	display: inline-block;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	position: absolute;
+	right: -15px;
+	top: 2px
+}
+.map-container h4 {
+	font-size: 10px
+}
+.map-container h4:nth-child(2) {
+	right: 145px;
+	top: 57px
+}
+.map-container h4:nth-child(3) {
+	right: 61px;
+	top: 76px
+}
+.map-container h4:nth-child(3) span::before {
+	right: -10px;
+	top: 13px
+}
+.map-container h4:nth-child(4) {
+	right: 116px;
+	top: 100px
+}
+.map-container h4:nth-child(5) {
+	right: 97px;
+	top: 119px
+}
+.map-container h4:nth-child(5) span::before {
+	right: -6px;
+	top: 11px
+}
+.map-container h4:nth-child(7) {
+	right: 104px;
+	top: 164px
+}
+.map-container h4:nth-child(7) span::before {
+	right: -15px;
+	top: 0
+}
+.map-container h4:nth-child(6) {
+	right: 77px;
+	top: 149px
+}
+.nd-mod-header .sponsor-powerdby {
+	right: 160px;
+	top: 12px
+}
+.wgt-footer-sponsor.wgt-medallytally {
+	margin-bottom: 0
+}
+.wgt-medallytally .wgt-footer .sponsor-powerdby {
+	padding-right: 0;
+	position: relative;
+	right: -7px;
+	text-align: right;
+	top: 0
+}
+
+@media screen and (max-width:1200px) {
+.mod.mod-sports-listing {
+	padding: 20px 10px
+}
+.sports-item {
+	margin-bottom: 10px;
+	padding: 0 5px
+}
+.sports-item .sports-title {
+	font-size: 14px
+}
+.map-container h4 span::before {
+	border: 2px solid #fff;
+	height: 8px;
+	right: -13px;
+	top: 1px;
+	width: 8px
+}
+.map-container h4:nth-child(2) {
+	right: 107px;
+	top: 47px
+}
+.map-container h4:nth-child(3) {
+	right: 49px;
+	top: 64px
+}
+.map-container h4:nth-child(3) span::before {
+	right: -4px;
+	top: 10px
+}
+.map-container h4:nth-child(4) {
+	right: 96px;
+	top: 80px
+}
+.map-container h4:nth-child(5) {
+	right: 79px;
+	top: 94px
+}
+.map-container h4:nth-child(5) span::before {
+	right: -9px;
+	top: 7px
+}
+.map-container h4:nth-child(6) {
+	right: 67px;
+	top: 118px
+}
+.map-container h4:nth-child(7) {
+	right: 91px;
+	top: 131px
+}
+}
+
+@media screen and (max-width:992px) {
+.sports-item {
+	width: 33.33%
+}
+.mod-medaltally .nd-table-td, .mod-medaltally .nd-table-th {
+	font-size: 12px;
+	padding: 0 5px
+}
+.nd-table-td.tblRank, .nd-table-th.tblRank {
+	width: 50px
+}
+.nd-table-td.tblBronze, .nd-table-td.tblGold, .nd-table-td.tblSilver, .nd-table-td.tblTotal, .nd-table-th.tblBronze, .nd-table-th.tblGold, .nd-table-th.tblSilver, .nd-table-th.tblTotal {
+	width: 60px
+}
+.result-datenav .slide-item {
+	width: 48px
+}
+.results-container {
+	padding: 0 10px
+}
+.result-content .nd-table-th {
+	font-size: 14px
+}
+.nd-table-td.tblCountry .team-image img {
+	height: auto;
+	width: 25px
+}
+.result-content .nd-table-td.tblCountry .team-image {
+	margin-top: -9px
+}
+.result-content .nd-table-td.tblMedals>span {
+	height: 25px;
+	width: 25px;
+	background-size: auto 25px
+}
+.result-content .nd-table-td.tblMedals>span.medal-gold {
+	background-position: 0 0
+}
+.result-content .nd-table-td.tblMedals>span.medal-silver {
+	background-position: -69px 0
+}
+.result-content .nd-table-td.tblMedals>span.medal-bronze {
+	background-position: -141px 0
+}
+.map-box {
+	margin: 10px 10px 20px;
+	padding: 20px 5px 5px
+}
+.map-container h4 {
+	font-size: 9px
+}
+.map-container h4:nth-child(3) {
+	right: 41px;
+	top: 49px
+}
+.map-container h4:nth-child(4) {
+	right: 88px;
+	top: 63px
+}
+.map-container h4:nth-child(5) {
+	right: 73px;
+	top: 75px
+}
+.map-container h4:nth-child(5) span::before {
+	right: -11px;
+	top: 3px
+}
+.map-container h4:nth-child(6) {
+	right: 47px;
+	top: 92px
+}
+.map-container h4:nth-child(6) span::before {
+	top: 10px;
+	right: 0
+}
+.map-container h4:nth-child(7) {
+	right: 76px;
+	top: 110px
+}
+}
+.si-football .mod-head h2, .si-football .nd-mod-header h1 {
+	color: #000
+}
+.si-football .mod-photo .mod-head h2, .si-football .mod-video .mod-head h2 {
+	color: #fff
+}
+.si-football .mod-gallery .mod-head h2, .si-football .mod-gallery .nd-mod-header h1 {
+	color: #fff;
+}
+.mod-top-chart .list-type-1 .post-meta {	
+	color: #1286c6;
+}
+
+
+.si-football .mod-football-video .list-type-4 .post-type-video .post-item-wrapper {
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	padding-bottom: 10px;
+	position: relative
+}

@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+@import url(../../../../fonts.googleapis.com/earlyaccess/lohitbengali.css);
+@import url(../../../../fonts.googleapis.com/earlyaccess/lohittamil.css);
+.row {
+    margin: 0 !important;
+}
+
+.col-12 
+{
+	padding-right: 0 !important; 
+    width: 100%;
+}
+
+.mod-head-live-score {
+    background: #00adea none repeat scroll 0 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.mod-head-live-score h2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 0 0 15px;
+    text-transform: uppercase;
+}
+
+.mod-body-live-score {
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+/*
+.scr-acrd-hdr {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+}
+*/
+.scr-ar {
+    background: rgba(0, 0, 0, 0) url("../../../../s.ndtvimg.com/images/score-bottom-arrow-black.png") no-repeat scroll 0 0;
+    display: block;
+    float: right;
+    height: 12px;
+    margin-top: 11px;
+    transform: rotate(0deg);
+    width: 17px;
+}
+
+.scr-acrd-panel.tab-container.active {
+    float: left;
+    padding: 0 !important;
+    width: 100%;
+}
+
+.scr-bar2 {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.fleft {
+    float: left !important;
+}
+
+.fleft2 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.fleft2 > li {
+    border-bottom: 1px solid #f9f9f9;
+    float: left;
+    font-weight: 400;
+    list-style-type: none;
+    padding: 5px 9px !important;
+    width: auto !important;
+}
+
+
+.scr-bar2 ul li {
+    background: rgba(0, 0, 0, 0) url("../../../../s.ndtvimg.com/images/sep.png") no-repeat scroll 100% 50%;
+    float: left;
+    margin-right: 4px;
+    padding-right: 9px;
+}
+
+
+.fleft2 li a {
+    color: #333;
+    float: left;
+    font-family: montserrat;
+    font-size: 14px !important;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.fleft2 > li:active {
+    border-bottom: 2px solid #333;
+}
+
+.fright {
+    float: right !important;
+    font-size: 11px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 8px;
+    width: auto;
+}
+
+.lst-link.fright {
+    display: none;
+}
+
+
+.lst-link.fright > li {
+    float: right;
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+
+.viewall {
+    float: left;
+    width: auto;
+}
+
+.scr-incnt {
+    background: #fff none repeat scroll 0 0;
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+
+.mtch {
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.mtch > a {
+    text-decoration: none;
+}
+
+.mtch_container {
+    background-color: inherit;
+    border-bottom: 1px solid #d5d6d6;
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+
+.mtch_center {
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 10px;
+    position: relative;
+    width: auto;
+    z-index: 5;
+}
+
+
+.mtch_center h2 {
+    background: #f4f4f4 none repeat scroll 0 0;
+    color: #333;
+    font-size: 12px !important;
+    font-weight: 300;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding-left: 0;
+    text-align: center;
+}
+
+.dayBox {
+    font: 12px;
+}
+
+
+.mtchbox {
+    display: block;
+    height: auto;
+    min-height: 90px;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+}
+
+.mtchbox .team1 {
+    box-sizing: border-box;
+    display: table;
+    float: left;
+    height: 80px;
+    left: 0;
+    padding-left: 10px;
+    width: 38%;
+}
+
+
+.team1 {
+    box-sizing: border-box;
+    display: table;
+    float: left;
+    height: 100px;
+    left: 0;
+    padding-left: 10px;
+    width: 38%;
+}
+
+
+
+.team-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.team-image {
+    margin: 0 auto !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.team2 .team-image img {
+    right: 9px;
+}
+
+.col-6:last-child {
+    padding-right: 0;
+}
+
+.tm_nm_txt {
+    color: #333;
+    float: none;
+
+    font-size: 20px !important;
+    line-height: 20px;
+    margin: 28px 0 0 50px;
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.team-image img {
+    max-height: 40px;
+    max-width: 40px;
+    position: absolute;
+    top: -20px;
+}
+
+.tm_nm_txt {
+    color: #333;
+    float: none;
+    font-size: 20px !important;
+    line-height: 20px;
+    margin: 28px 0 0 50px;
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.team1 .tm_score {
+    text-align: left;
+}
+.tm_score {
+    color: #333;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 0 50px;
+    padding: 0;
+}
+
+.score_teaser2 {
+    display: table;
+   float: left;
+    height: 60px;
+    margin: 8px auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 32%;
+}
+
+.teaser-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.m_date, .s_score {
+    color: #630;
+    font-size: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.s_overs {
+    color: #333;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+}
+.mtchbox .team2 {
+    box-sizing: border-box;
+    display: table;
+    float: right;
+    height: 80px;
+    position: relative;
+    right: 0;
+    top: auto;
+    width: 34% !important;
+}
+
+.team2 .team-content {
+    display: inline;
+    vertical-align: middle;
+}
+
+.tm_nm_txt_2 {
+    color: #333;
+    float: left;
+    font-size: 20px !important;
+    line-height: 20px;
+    margin: 28px 0 0 30px;
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.team2 .tm_score {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 0 0 30px;
+    text-align: left;
+}
+
+.mtch_result {
+    box-sizing: border-box;
+    color: #333;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.ln_en {
+	font-family: montserratlight, sans-serif
+}
+.ln_en .mtch_result, .ln_en .tm_nm_txt_2, .ln_en .tm_nm_txt,.ln_en .tm_score, .ln_en .mod-head-live-score, .ln_en .mod-head-live-score h2, .ln_en .fright, .ln_en .mtch_center h2, .ln_en .tm_nm_txt, .ln_en .score_teaser2, .ln_en .mod-head-live-score, .ln_en .mod-head-live-score h2, .ln_en .mtch_center h2, .ln_en .tm_nm_txt, .ln_en .tm_nm_txt_2, .ln_en .tm_nm_txt_3, .ln_en .tm_score, .ln_en .score_teaser, .ln_en .team2 .tm_nm, .ln_en .m_score1, .ln_en .mtch_result, .ln_en .score_teaser2, .ln_en .fright, .ln_en .story_highlight, .ln_en .tm_nm_txt_3, .ln_en .m_score1, .ln_en #testimonials .testimonial_text {
+	font-family: Roboto, sans-serif;
+}
+
+.ln_en .mod-football-tracker .tracker-title-content,.ln_en .mod-fixture-football .nd-group-name .txt-1,.ln_en .mod-postlisting .list-type-1 .post-description p,.ln_en .mod-story-listing .list-type-4 h1,.ln_en .mod-story-listing .list-type-4 h3,.ln_en .mod-article .article-content a,.ln_en .mod-article .mod-head a,.ln_en .mod-article .article-content p,.ln_en .mod-header .post-description h2,.ln_en .mod-header .post-description p,.ln_en .list-type-9 .post-item:first-child .post-meta,.ln_en .list-type-9 .post-description p,.ln_en .list-type-10 .post-meta,.ln_en .list-type-10 .post-title h1,.ln_en .list-type-10 .post-title h2,.ln_en .list-type-10 .post-title h3,.ln_en .list-type-12 .post-title h1,.ln_en .list-type-12 .post-title h2,.ln_en .list-type-12 .post-title h3,.ln_en .list-type-12 .post-title p {
+	font-family: robotolight, sans-serif;
+}
+.ln_en,.ln_en .nd-football-module .match-venue,.ln_en .nd-football-module .nd-goal-time,.ln_en .nd-football-module .player-name,.ln_en .nd-football-module .team-name,.ln_en .nd-football-module .team-score,.ln_en .mod-group-listing li.nd-title,.ln_en .mod-group-listing .team-name,.ln_en .mod-player-listing .nd-player-name,.ln_en .mod-fixture-football .match-venue,.ln_en .mod-fixture-football .match-score em,.ln_en .nd-widget-fixtures .nd-match-count,.ln_en .nd-widget-fixtures .nd-match-venue,.ln_en .widget-winner-history .team-name,.ln_en .history-item,.ln_en .mod-medaltally .nd-table-td,.ln_en .mod-medaltally .nd-table-th,.ln_en .sponsor-powerdby span,.ln_en .sponsor-powerdby>div,.ln_en .result-content .nd-table-td,.ln_en .mod-medaltally .nd-table-td,.ln_en .dont-miss .dont-miss-swiper,.ln_en .fb-goal,.ln_en .main-nav ul li,.ln_en .main-nav ul li a,.ln_en .nodata,.ln_en .nd-nav .megamenu.team-mega-menu .tab li,.ln_en .mod-postlisting .list-type-2 .post-title h1,.ln_en .mod-postlisting .list-type-2 .post-title h2,.ln_en .mod-postlisting .list-type-2 .post-title h3,.ln_en .mod-series-stats .data span.data-text, .mod-team-squad .player-detail .player-role,.ln_en .tp_perf_cont .tp_plyr_block,.ln_en .mod-article-caraousel .counts,.ln_en .nd-footer .links,.ln_en .mod-top-chart .list-type-1 .post-title h1,.ln_en .mod-top-chart .list-type-1 .post-title h2,.ln_en .mod-top-chart .list-type-1 .post-title h3,.ln_en .mod-gallery .list-type-3 .post-description p,.ln_en .mod-gallery .list-type-3 .post-item:first-child .post-description p,.ln_en .widget-poll input[type=radio]+label,.ln_en .widget-points-table .nd-table-td,.ln_en .nd-table-td,.ln_en .nd-footer .live-updates span,.ln_en .mod-news-listing .list-type-1 .post-name,.ln_en .mod-news-listing .list-type-1 .post-tag,.ln_en .mod-news-listing .list-type-1 .post-team-detail,.ln_en .mod-news-listing .list-type-1 .post-time,.ln_en .mod-details .nd-txt-section p,.ln_en .nd-ad-title span,.ln_en .live-score .team-name,.ln_en .live-score .team-score span,.ln_en .live-score .match-status .team-score p,.ln_en .nd-view-more,.ln_en .list-type-3 .post-meta,.ln_en .list-type-4 .post-description p,.ln_en .list-type-8 .post-title h1,.ln_en .list-type-8 .post-title h2,.ln_en .list-type-8 .post-title h3,.ln_en .list-type-8 .post-meta,.ln_en .list-type-9 .post-title h1,.ln_en .list-type-9 .post-title h2,.ln_en .list-type-9 .post-title h3,.ln_en .list-type-4 .post-title h1,.ln_en .list-type-4 .post-title h2{
+	font-family: robotoregular, sans-serif;
+}
+.ln_en .blu, .ln_en .blu a, .ln_en .video-detail.nd-mod-header .video-header h1, .ln_en .video-content .video-heading-new h1, .ln_en .post-type-video-detail .video-post-new h1, .ln_en .nd-accord .nd-accord-head:before, .ln_en .mod-football-tracker .tracker-count, .ln_en .mod-fixture-football .nd-group-name .txt-2, .ln_en .mod-fixture-football .team-name, .ln_en .nd-widget-fixtures .nd-match-date, .mod-medaltally .nd-table-td, .ln_en .mod-medaltally .nd-table-th, .ln_en .mod-team-squad .player-detail .player-name, .ln_en .widget-win-chance .over-comparison .status span.txt-2, .ln_en .widget-win-chance .team-percent em, .ln_en .photo-detail-description p, .ln_en .author-description h3, .ln_en .mod-fixture-football .nd-section-title, .ln_en .nd-clear, .ln_en .result-content .nd-table-th, .ln_en .result-title, .ln_en .mtch,.ln_en .nw-ot h3,.ln_en .nw-ot h3 a,.ln_en .nw-wgt h3,.ln_en .nw-wgt h3 a,.ln_en.si-cricket.si-football .scr-bar2 ul li a,.ln_en .photo-crtsy h4,.ln_en .para-loc,.ln_en .breadcrumb-section li, .ln_en .widget-poll .title,.ln_en .nd-footer .live-updates p,.ln_en .mod-listing .list-type-9 .post-title h1,.ln_en .mod-listing .list-type-9 .post-title h2,.ln_en .mod-listing .list-type-9 .post-title h3,.ln_en .mod-history-listing .team-record a,.ln_en .mod-history-listing .team-record span,.ln_en .mod-team-listing .nd-player-name,.ln_en .mod-team-listing .nd-player-title,.ln_en .nd-block-section-head.nd-head-txt,.ln_en .widget-matches .tab-item p,.ln_en .widget .nd-tab ul li,.ln_en .nd-load-more,.ln_en .post-title h3 {
+	font-family: robotomedium, sans-serif;
+}
+.ln_en .author-heading,.ln_en .mod-profile .nd-profile-content,.ln_en .mod-fixture-football .match-score,.ln_en .mod-fixture-football .match-time,.ln_en .mod-standing-football .nd-table-th,.ln_en .sports-item .sports-title,.ln_en .result-datenav .slide-item span,.ln_en .latest-tab,.ln_en .select-box .select-out,.ln_en .history-item>h4,.ln_en .history-timeline .slide-item,.ln_en .dont-miss-corner,.ln_en .nd-nav .megamenu.team-mega-menu .tab li.active,.ln_en .widget-over-comparison .nd-over-count,.ln_en .widget-over-comparison .nd-table-td.nd-team,.ln_en .widget-over-comparison .nd-table-th.nd-team,.ln_en .mod-knock-out .match-status span,.ln_en .nd-table-th,.ln_en .mod-article .article-content strong,.ln_en .mod-details .nd-history-summary .nd-table-td:first-child,.ln_en .nd-block-section-head.nd-head-txt,.ln_en .nd-group-results .nd-table-th,.ln_en .dont-miss-corner {
+	font-family: robotobold, sans-serif;
+}
+
+.ln_en .scr-acrd-hdr p, .ln_en .scr-bar2, .ln_en .fleft .fleft2>li, .ln_en .fleft .fleft2 li a, .ln_en .fleft2>li, .ln_en .fleft2 li a, .ln_en .newins_widget .newins_widhead h2, .ln_en .newins_widget .newins_widhead span,.ln_en .newins_widget .oped_al_read a, .ln_en .n_searchfld {
+	font-family: Montserrat, sans-serif;
+}
+.ln_en .nd-football-module .mod-head h2,.ln_en .nd-widget-fixtures .team-name,.ln_en .nd-widget-fixtures .nd-match-time,.ln_en .widget-points-table.nd-football-pt .tab .group-title,.ln_en .sub.tab-container .tab li,.ln_en .nd-nav .megamenu .list-type-8 .post-title,.ln_en .nd-secondary-nav .match-fixture .team-detail,.ln_en .mod-video .list-type-4 .post-description p,.ln_en .mod-series-stats span.player-name,.ln_en .mod-series-stats .data span.data-value,.ln_en .tp_perf_cont .tp_perf_info,.ln_en .tp_perf_cont .tp_plyr_block span,.ln_en .mod-article-caraousel .post-title h1,.ln_en .mod-article-caraousel .post-title h2,.ln_en .mod-article-caraousel .post-title h3,.ln_en .mod-gallery .list-type-3 .post-meta,.ln_en .sidebar-widget-wrapper .mod-head .select-box,.ln_en .nd-footer .links ul li,.ln_en .nd-footer .copyrights span,.ln_en .mod-feature-listing .list-type-1 .post-name, .widget-matches .fixtures .status,.ln_en .widget-matches .results .status,.ln_en .mod-header .post-meta,.ln_en .mod-header .post-title h1,.ln_en .mod-header .post-title h2,.ln_en .mod-header .post-title h3,.ln_en .post-title h1,.ln_en .post-title h2,.ln_en .post-title h3,.ln_en .post-title p,.ln_en .post-meta,.ln_en .mod-top-chart .list-type-1 .post-meta,.ln_en .menutitle {
+	font-family: montserratregular, sans-serif;
+}
+.ln_en .map-box-head, .ln_en .map-container h4,.ln_en .mod-fixture-football .nd-block-section-head.nd-head-txt,.ln_en .mod-standing-football .nd-block-section-head.nd-head-txt,.ln_en .mod-standing-football .nd-select-head, .tab-container .tab li,.ln_en .mod-gallery .list-type-1 .post-title h1,.ln_en .mod-gallery .list-type-1 .post-title h2,.ln_en .mod-gallery .list-type-1 .post-title h3,.ln_en .mod-gallery .list-type-2 .post-title h1, .mod-gallery .list-type-2 .post-title h2,.ln_en .mod-gallery .list-type-2 .post-title h3,.ln_en .mod-video .list-type-1 .post-title h1,.ln_en .mod-video .list-type-1 .post-title h2,.ln_en .mod-video .list-type-1 .post-title h3,.ln_en .mod-series-stats span.team-name,.ln_en .mod-team-squad .mod-head h2,.ln_en .nd-footer .links h3,.ln_en .nd-footer .links p,.ln_en.si-microsite #side-nav ul li a,.ln_en .nd-menu,.ln_en .nd-nav li,.ln_en .nd-mod-header .mod-head h1,.ln_en .nd-mod-header .mod-head h2,.ln_en .nd-mod-header .mod-head h3,.ln_en .category a,.ln_en .mod-history-listing .nd-history-years,.ln_en .mod-history-listing .team-record span,.ln_en .mod-team-listing .nd-team-name,.ln_en .list-type-2 .post-title h1,.ln_en .list-type-2 .post-title h2,.ln_en .list-type-2 .post-title h3,.ln_en.si-football .mod-article .article-related .mod-head p,.ln_en .mod-head h2,.ln_en .mod-head h3,.ln_en .mod-head p {
+	font-family: montserratbold, sans-serif;
+}
+
+
+
+
+.ln_hi {
+	font-family: 'Noto Sans', sans-serif;
+}
+.ln_hi .mtch_result, .ln_hi .tm_nm_txt_2, .ln_hi .tm_nm_txt,.ln_hi .tm_score, .ln_hi .mod-head-live-score, .ln_hi .mod-head-live-score h2, .ln_hi .fright, .ln_hi .mtch_center h2, .ln_hi .tm_nm_txt, .ln_hi .score_teaser2, .ln_hi .mod-head-live-score, .ln_hi .mod-head-live-score h2, .ln_hi .mtch_center h2, .ln_hi .tm_nm_txt, .ln_hi .tm_nm_txt_2, .ln_hi .tm_nm_txt_3, .ln_hi .tm_score, .ln_hi .score_teaser, .ln_hi .team2 .tm_nm, .ln_hi .m_score1, .ln_hi .mtch_result, .ln_hi .score_teaser2, .ln_hi .fright, .ln_hi .story_highlight, .ln_hi .tm_nm_txt_3, .ln_hi .m_score1, .ln_hi #testimonials .testimonial_text {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.ln_hi .mod-football-tracker .tracker-title-content,.ln_hi .mod-fixture-football .nd-group-name .txt-1,.ln_hi .mod-postlisting .list-type-1 .post-description p,.ln_hi .mod-story-listing .list-type-4 h1,.ln_hi .mod-story-listing .list-type-4 h3,.ln_hi .mod-article .article-content a,.ln_hi .mod-article .mod-head a,.ln_hi .mod-article .article-content p,.ln_hi .mod-header .post-description h2,.ln_hi .mod-header .post-description p,.ln_hi .list-type-9 .post-item:first-child .post-meta,.ln_hi .list-type-9 .post-description p,.ln_hi .list-type-10 .post-meta,.ln_hi .list-type-10 .post-title h1,.ln_hi .list-type-10 .post-title h2,.ln_hi .list-type-10 .post-title h3,.ln_hi .list-type-12 .post-title h1,.ln_hi .list-type-12 .post-title h2,.ln_hi .list-type-12 .post-title h3,.ln_hi .list-type-12 .post-title p {
+	font-family: 'Noto Sans', sans-serif;
+}
+.ln_hi,.ln_hi .nd-football-module .match-venue,.ln_hi .nd-football-module .nd-goal-time,.ln_hi .nd-football-module .player-name,.ln_hi .nd-football-module .team-name,.ln_hi .nd-football-module .team-score,.ln_hi .mod-group-listing li.nd-title,.ln_hi .mod-group-listing .team-name,.ln_hi .mod-player-listing .nd-player-name,.ln_hi .mod-fixture-football .match-venue,.ln_hi .mod-fixture-football .match-score em,.ln_hi .nd-widget-fixtures .nd-match-count,.ln_hi .nd-widget-fixtures .nd-match-venue,.ln_hi .widget-winner-history .team-name,.ln_hi .history-item,.ln_hi .mod-medaltally .nd-table-td,.ln_hi .mod-medaltally .nd-table-th,.ln_hi .sponsor-powerdby span,.ln_hi .sponsor-powerdby>div,.ln_hi .result-content .nd-table-td,.ln_hi .mod-medaltally .nd-table-td,.ln_hi .dont-miss .dont-miss-swiper,.ln_hi .fb-goal,.ln_hi .main-nav ul li,.ln_hi .main-nav ul li a,.ln_hi .nodata,.ln_hi .nd-nav .megamenu.team-mega-menu .tab li,.ln_hi .mod-postlisting .list-type-2 .post-title h1,.ln_hi .mod-postlisting .list-type-2 .post-title h2,.ln_hi .mod-postlisting .list-type-2 .post-title h3,.ln_hi .mod-series-stats .data span.data-text, .mod-team-squad .player-detail .player-role,.ln_hi .tp_perf_cont .tp_plyr_block,.ln_hi .mod-article-caraousel .counts,.ln_hi .nd-footer .links,.ln_hi .mod-top-chart .list-type-1 .post-title h1,.ln_hi .mod-top-chart .list-type-1 .post-title h2,.ln_hi .mod-top-chart .list-type-1 .post-title h3,.ln_hi .mod-gallery .list-type-3 .post-description p,.ln_hi .mod-gallery .list-type-3 .post-item:first-child .post-description p,.ln_hi .widget-poll input[type=radio]+label,.ln_hi .widget-points-table .nd-table-td,.ln_hi .nd-table-td,.ln_hi .nd-footer .live-updates span,.ln_hi .mod-news-listing .list-type-1 .post-name,.ln_hi .mod-news-listing .list-type-1 .post-tag,.ln_hi .mod-news-listing .list-type-1 .post-team-detail,.ln_hi .mod-news-listing .list-type-1 .post-time,.ln_hi .mod-details .nd-txt-section p,.ln_hi .nd-ad-title span,.ln_hi .live-score .team-name,.ln_hi .live-score .team-score span,.ln_hi .live-score .match-status .team-score p,.ln_hi .nd-view-more,.ln_hi .list-type-3 .post-meta,.ln_hi .list-type-4 .post-description p,.ln_hi .list-type-8 .post-title h1,.ln_hi .list-type-8 .post-title h2,.ln_hi .list-type-8 .post-title h3,.ln_hi .list-type-8 .post-meta,.ln_hi .list-type-9 .post-title h1,.ln_hi .list-type-9 .post-title h2,.ln_hi .list-type-9 .post-title h3,.ln_hi .list-type-4 .post-title h1,.ln_hi .list-type-4 .post-title h2{
+	font-family: 'Noto Sans', sans-serif;
+}
+.ln_hi .blu, .ln_hi .blu a, .ln_hi .video-detail.nd-mod-header .video-header h1, .ln_hi .video-content .video-heading-new h1, .ln_hi .post-type-video-detail .video-post-new h1, .ln_hi .nd-accord .nd-accord-head:before, .ln_hi .mod-football-tracker .tracker-count, .ln_hi .mod-fixture-football .nd-group-name .txt-2, .ln_hi .mod-fixture-football .team-name, .ln_hi .nd-widget-fixtures .nd-match-date, .mod-medaltally .nd-table-td, .ln_hi .mod-medaltally .nd-table-th, .ln_hi .mod-team-squad .player-detail .player-name, .ln_hi .widget-win-chance .over-comparison .status span.txt-2, .ln_hi .widget-win-chance .team-percent em, .ln_hi .photo-detail-description p, .ln_hi .author-description h3, .ln_hi .mod-fixture-football .nd-section-title, .ln_hi .nd-clear, .ln_hi .result-content .nd-table-th, .ln_hi .result-title, .ln_hi .mtch,.ln_hi .nw-ot h3,.ln_hi .nw-ot h3 a,.ln_hi .nw-wgt h3,.ln_hi .nw-wgt h3 a,.ln_hi.si-cricket.si-football .scr-bar2 ul li a,.ln_hi .photo-crtsy h4,.ln_hi .para-loc,.ln_hi .breadcrumb-section li, .ln_hi .widget-poll .title,.ln_hi .nd-footer .live-updates p,.ln_hi .mod-listing .list-type-9 .post-title h1,.ln_hi .mod-listing .list-type-9 .post-title h2,.ln_hi .mod-listing .list-type-9 .post-title h3,.ln_hi .mod-history-listing .team-record a,.ln_hi .mod-history-listing .team-record span,.ln_hi .mod-team-listing .nd-player-name,.ln_hi .mod-team-listing .nd-player-title,.ln_hi .nd-block-section-head.nd-head-txt,.ln_hi .widget-matches .tab-item p,.ln_hi .widget .nd-tab ul li,.ln_hi .nd-load-more,.ln_hi .post-title h3 {
+	font-family: 'Noto Sans', sans-serif;
+}
+.ln_hi .author-heading,.ln_hi .mod-profile .nd-profile-content,.ln_hi .mod-fixture-football .match-score,.ln_hi .mod-fixture-football .match-time,.ln_hi .mod-standing-football .nd-table-th,.ln_hi .sports-item .sports-title,.ln_hi .result-datenav .slide-item span,.ln_hi .latest-tab,.ln_hi .select-box .select-out,.ln_hi .history-item>h4,.ln_hi .history-timeline .slide-item,.ln_hi .dont-miss-corner,.ln_hi .nd-nav .megamenu.team-mega-menu .tab li.active,.ln_hi .widget-over-comparison .nd-over-count,.ln_hi .widget-over-comparison .nd-table-td.nd-team,.ln_hi .widget-over-comparison .nd-table-th.nd-team,.ln_hi .mod-knock-out .match-status span,.ln_hi .nd-table-th,.ln_hi .mod-article .article-content strong,.ln_hi .mod-details .nd-history-summary .nd-table-td:first-child,.ln_hi .nd-block-section-head.nd-head-txt,.ln_hi .nd-group-results .nd-table-th,.ln_hi .dont-miss-corner {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 700;
+}
+
+.ln_hi .scr-acrd-hdr p, .ln_hi .scr-bar2, .ln_hi .fleft .fleft2>li, .ln_hi .fleft .fleft2 li a, .ln_hi .fleft2>li, .ln_hi .fleft2 li a, .ln_hi .newins_widget .newins_widhead h2, .ln_hi .newins_widget .newins_widhead span,.ln_hi .newins_widget .oped_al_read a, .ln_hi .n_searchfld {
+	font-family:'Noto Sans', sans-serif;
+}
+.ln_hi .nd-football-module .mod-head h2,.ln_hi .nd-widget-fixtures .team-name,.ln_hi .nd-widget-fixtures .nd-match-time,.ln_hi .widget-points-table.nd-football-pt .tab .group-title,.ln_hi .sub.tab-container .tab li,.ln_hi .nd-nav .megamenu .list-type-8 .post-title,.ln_hi .nd-secondary-nav .match-fixture .team-detail,.ln_hi .mod-video .list-type-4 .post-description p,.ln_hi .mod-series-stats span.player-name,.ln_hi .mod-series-stats .data span.data-value,.ln_hi .tp_perf_cont .tp_perf_info,.ln_hi .tp_perf_cont .tp_plyr_block span,.ln_hi .mod-article-caraousel .post-title h1,.ln_hi .mod-article-caraousel .post-title h2,.ln_hi .mod-article-caraousel .post-title h3,.ln_hi .mod-gallery .list-type-3 .post-meta,.ln_hi .sidebar-widget-wrapper .mod-head .select-box,.ln_hi .nd-footer .links ul li,.ln_hi .nd-footer .copyrights span,.ln_hi .mod-feature-listing .list-type-1 .post-name, .widget-matches .fixtures .status,.ln_hi .widget-matches .results .status,.ln_hi .mod-header .post-meta,.ln_hi .mod-header .post-title h1,.ln_hi .mod-header .post-title h2,.ln_hi .mod-header .post-title h3,.ln_hi .post-title h1,.ln_hi .post-title h2,.ln_hi .post-title h3,.ln_hi .post-title p,.ln_hi .post-meta,.ln_hi .mod-top-chart .list-type-1 .post-meta,.ln_hi .menutitle {
+	font-family: 'Noto Sans', sans-serif;
+}
+.ln_hi .map-box-head, .ln_hi .map-container h4,.ln_hi .mod-fixture-football .nd-block-section-head.nd-head-txt,.ln_hi .mod-standing-football .nd-block-section-head.nd-head-txt,.ln_hi .mod-standing-football .nd-select-head, .tab-container .tab li,.ln_hi .mod-gallery .list-type-1 .post-title h1,.ln_hi .mod-gallery .list-type-1 .post-title h2,.ln_hi .mod-gallery .list-type-1 .post-title h3,.ln_hi .mod-gallery .list-type-2 .post-title h1, .mod-gallery .list-type-2 .post-title h2,.ln_hi .mod-gallery .list-type-2 .post-title h3,.ln_hi .mod-video .list-type-1 .post-title h1,.ln_hi .mod-video .list-type-1 .post-title h2,.ln_hi .mod-video .list-type-1 .post-title h3,.ln_hi .mod-series-stats span.team-name,.ln_hi .mod-team-squad .mod-head h2,.ln_hi .nd-footer .links h3,.ln_hi .nd-footer .links p,.ln_hi.si-microsite #side-nav ul li a,.ln_hi .nd-menu,.ln_hi .nd-nav li,.ln_hi .nd-mod-header .mod-head h1,.ln_hi .nd-mod-header .mod-head h2,.ln_hi .nd-mod-header .mod-head h3,.ln_hi .category a,.ln_hi .mod-history-listing .nd-history-years,.ln_hi .mod-history-listing .team-record span,.ln_hi .mod-team-listing .nd-team-name,.ln_hi .list-type-2 .post-title h1,.ln_hi .list-type-2 .post-title h2,.ln_hi .list-type-2 .post-title h3,.ln_hi.si-football .mod-article .article-related .mod-head p,.ln_hi .mod-head h2,.ln_hi .mod-head h3,.ln_hi .mod-head p {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 700;
+}
+
+.ln_hi .nd-nav li{font-size: 15px;}
+.ln_hi .mod-story-listing .list-type-4 h3{font-size: 15px; line-height: 20px;}
+.ln_hi .mod-story-listing .list-type-4 .post-item:first-child h1,.ln_hi .mod-story-listing .list-type-4 .post-item:first-child h3{line-height:34px;}
+.ln_hi .mod-head h2,.ln_hi .mod-head h3,.ln_hi .mod-head p,.ln_hi .nd-footer .links h3,.ln_hi .nd-footer .links p,.ln_hi.si-microsite #side-nav ul li a{font-size: 15px;}
+.ln_hi .mod-top-chart .list-type-1 .post-item:first-child .post-title h1, .ln_hi .mod-top-chart .list-type-1 .post-item:first-child .post-title h2, .ln_hi .mod-top-chart .list-type-1 .post-item:first-child .post-title h3{font-size:17px; line-height: 22px;}
+.ln_hi .mod-top-chart .list-type-1 .post-title h1, .ln_hi .mod-top-chart .list-type-1 .post-title h2, .ln_hi .mod-top-chart .list-type-1 .post-title h3{font-size: 15px;line-height: 19px;}
+.ln_hi .nd-menu,.ln_hi .nd-footer .links ul li{font-size:14px;}
+.ln_hi .mod-head-live-score h2{font-size:18px; line-height: 38px;}
+
+.ln_hi .nd-footer .copyrights span,.ln_hi .nd-footer .links .list-item.more-item ul li{font-family: montserratregular, sans-serif;font-size:12px;}
+
+.ln_bn .nd-nav li, .ln_bn .nd-secondary-nav .match-fixture .team-detail{font-size:16px; letter-spacing: 0;}
+.ln_bn .mod-story-listing .list-type-4 .post-item:first-child h1, .ln_bn .mod-story-listing .list-type-4 .post-item:first-child h3{line-height: 36px;}
+.ln_bn .nd-footer .links ul li{font-size: 15px;}
+.ln_bn.si-football .nd-footer .links .title span, .ln_bn.si-football .nd-footer .links .title h3 {font-weight: 700;font-size: 15px;}
+ 
+.ln_bn .nd-footer .copyrights span{font-family:montserratregular,sans-serif}
+.ln_bn.si-microsite #side-nav ul li a{font-size: 15px;}
+.ln_bn .nd-menu{font-size: 14px;}
+
+.ln_ta, .ln_ta .nd-menu, .ln_ta .mod-top-chart .list-type-1 .post-title h1, .ln_ta .mod-top-chart .list-type-1 .post-title h2, .ln_ta .mod-top-chart .list-type-1 .post-title h3, .ln_ta .mod-story-listing .list-type-4 h1,.ln_ta .mod-story-listing .list-type-4 h3, .ln_ta .post-meta span, .ln_ta .nd-footer .links ul li{font-family: 'Lohit Tamil', sans-serif;}
+.ln_ta .nd-nav li{font-size:15px;}
+.ln_ta .nd-nav li.nav-more a{padding: 0 5px; line-height: normal;}
+.ln_ta .nd-menu{font-size: 15px;}
+.ln_ta.si-microsite #side-nav ul li a{font-size: 15px;}
+.ln_ta .mod-story-listing .list-type-4 h1, .ln_ta .mod-story-listing .list-type-4 h3{font-size: 14px;line-height: 18px;}
+ 
+.ln_ta .mod-story-listing .list-type-4 .post-item:first-child h1, .ln_ta .mod-story-listing .list-type-4 .post-item:first-child h3{line-height: 30px;}
+.ln_ta.si-football .mod-head h2, .ln_ta.si-football .nd-mod-header h1{font-weight: 600;}
+@media screen and (max-width:1370px){.ln_ta .nd-nav li{font-size:11px; padding:0px 8px;}.ln_ta.si-microsite #side-nav ul li a{font-size: 11px;}.ln_ta .mod-story-listing .list-type-4 h3{font-size: 15px;line-height: 19px; }
+.ln_ta .mod-top-chart .post-content{height: auto; padding-bottom: 5px;}
+}
